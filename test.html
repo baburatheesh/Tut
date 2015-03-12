@@ -1,0 +1,1824 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AirTrip Home</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/ImageSelect.css">
+         <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
+	<link href="css/main.css" rel="stylesheet">
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+     <script type="text/javascript" src="js/bootstrap-select.js"></script>
+	<script type="text/javascript" src="jss/video.js"></script>
+	<script type="text/javascript" src="jss/bigvideo.js"></script>
+	<script>
+	$(function() {
+		
+
+		
+		var availableTags = [
+			"Burgundy, France",
+			"Chateau St Michel, France",
+			"Barrier reef, Asutralia",
+			"Kispiox river, Canada",
+			"Saskatchewan, Canada",
+			"Azores, Atlantic Ocean",
+			"Runga, Zimbabwe",
+			"Ramsay ducks, South Africa",
+			"Belingi, Botswana",
+			
+		];
+		$( "#autocomplete2" ).autocomplete({
+			source: availableTags
+		});
+			var availableTags = [
+			"Burgundy, France",
+			"Chateau St Michel, France",
+			"Barrier reef, Asutralia",
+			"Kispiox river, Canada",
+			"Saskatchewan, Canada",
+			"Azores, Atlantic Ocean",
+			"Runga, Zimbabwe",
+			"Ramsay ducks, South Africa",
+			"Belingi, Botswana",
+			
+		];
+		$( "#autocomplete" ).autocomplete({
+			source: availableTags
+		});
+		});
+		
+	
+	</script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body>
+<section class="top-bar">
+      <header class="">
+    <div class=" col-lg-1 col-md-1 col-sm-12 col-xs-12 logo">
+          <center>
+        <a href="index.html"><img src="images/logo.png" class="padd-25-0 resp-fix-logo"></a>
+      </center>
+        </div>
+    <div class=" col-lg-6 col-md-6 col-sm-12 col-xs-12 col-md-offset-6 logo-padd">
+          <nav class="navbar hidden-xs" role="navigation">
+        <div> 
+              <!-- Brand and toggle get grouped for better mobile display --> 
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              
+              <center>
+            <ul class="nav navbar-nav nav-right">
+                  <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Join</a>
+                <ul class="dropdown-menu  min-width-100" role="menu">
+                      <li><a href="#" data-toggle="modal" data-target="#joinModal">Host</a></li>
+                     
+                      <li><a href="#" data-toggle="modal" data-target="#user-join">User</a></li>
+                    </ul>
+              </li>
+                  <li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="review.html">Review</a></li>
+                  <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hint="French" class="hint6"><img src="images/lang1.png"><span class="caret color-fff"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                      <li><a href="#"  data-hint="English" class="hint6"><img src="images/england-lang.png"></a></li>
+                      <li><a href="#" data-hint="Spanish" class="hint6"><img src="images/spain-lang.png"></a></li>
+                      <li><a href="#" data-hint="German" class="hint6"><img src="images/german-lang.png"></a></li>
+                    </ul>
+              </li>
+                  <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-dollar  color-fff"></i> USD<span class="caret color-fff"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                      <li><a href="#"><i class="fa fa-gbp color-fff"></i> GBP</a></li>
+                      <li><a href="#"><i class="fa fa-euro color-fff"></i> EUR</a></li>
+                    </ul>
+              </li>
+                </ul>
+          </center>
+              <!-- /.navbar-collapse --> 
+            </div>
+        <!-- /.container-fluid --> 
+      </nav>
+          <!-- small screen nav--> 
+          <!-- small screen nav--> 
+          <a id="menu-toggle" href="#" class=" hidden-lg hidden-md hidden-sm"><span class="menu-res">Menu</span><img src="images/mobile-button.jpg"></a>
+          <div id="sidebar-wrapper" class="log-btm-bg hidden-lg hidden-md hidden-sm">
+        <nav>
+              <center>
+            <ul class="nav navbar-nav mg-0 width-70 padd-t30">
+                  <li class="pull-left bord-rt width-50 font-16"> <a href="#" data-toggle="modal" data-target="#joinModal"><i class="fa fa-user"></i> Join</a> </li>
+                  <li class="pull-right width-50 font-16"><a href="#" data-toggle="modal" data-target="#loginModal"><i class="fa fa-unlock-alt"></i> Login</a></li>
+                </ul>
+          </center>
+              <div class="clearfix"></div>
+              <ul class="nav navbar-nav mg-0 padd-0-60">
+            <li><a href="#" data-toggle="modal" data-target="#joinModal"><i class="fa fa-user"></i> Sign up as host</a></li>
+            <div class=" nav-divider2"></div>
+            <li> <a href="#"><i class="fa  fa-pencil"></i> Help</a></li>
+            <div class=" nav-divider2"></div>
+            <li><a href="review.html"><i class="fa   fa-question"></i> Review</a></li>
+            <div class=" nav-divider2"></div>
+            <li class="dropdown2"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-language"></i> Language</a>
+                  <ul class="dropdown-menu2 list-inline" role="menu">
+                <li><a href="#"><img src="images/england-lang.png"></a></li>
+                <li><a href="#"><img src="images/spain-lang.png"></a></li>
+                <li><a href="#"><img src="images/german-lang.png"></a></li>
+              </ul>
+                </li>
+            <div class=" nav-divider2"></div>
+            <li class="dropdown2"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  fa-dollar"></i> Currency</a>
+                  <ul class="dropdown-menu2 list-inline" role="menu">
+                <li><a href="#"><i class="fa fa-euro color-fff"></i></a></li>
+                <li><a href="#"><i class="fa  fa-dollar color-fff"></i></a></li>
+                <li><a href="#"><i class="fa  fa-gbp color-fff"></i></a></li>
+              </ul>
+                </li>
+          </ul>
+            </nav>
+      </div>
+          <!--small screen nav end--> 
+        </div>
+  </header>
+      <div class="clearfix"></div>
+      <div class="tagline ">
+    <center>
+          <h2 class="upper-case color-fff">Find your dream<br>
+        <span class="color-fff">Shooting / fishing  destination</span></h2>
+        <button id="trigger-overlay" class=" btn hidden-md hidden-lg bg-red mgt-20 font-16 padd-10-0" type="button">Where do you want to go? <i class="fa fa-search"></i></button>
+       
+        </center>
+  </div>
+      <div class="search-area hidden-xs">
+    <center>
+          <div>
+        <form class="navbar-form " role="search" action="host-listing.html">
+              <div class="form-group">
+            <input id="autocomplete" class="form-control min-width-380" placeholder="Where do you want to go?">
+          </div>
+      <a href="#" data-hint="Type or select an option" class="hint-new">        <div class="form-group width-150" >
+              
+           <select multiple="" class="my-select-border" data-placeholder="Type"  > 
+
+   <option data-img-src="images/type/Coarse Fishing.png">Coarse Fishing</option>
+<option data-img-src="images/type/Driven Big Game.png">Driven Big Game</option>
+<option data-img-src="images/type/Highseat.png">Highseat</option>
+<option data-img-src="images/type/Game Fishing.png">Game Fishing</option>
+<option data-img-src="images/type/Fly Fishing.png">Fly Fishing</option>
+<option data-img-src="images/type/Carp Fishing.png">Carp Fishing</option>
+<option data-img-src="images/type/Ice Fishing.png">Ice Fishing</option>
+<option data-img-src="images/type/Salt Water Fishing.png">Salt Water Fishing</option>
+<option data-img-src="images/type/Fresh Water Fishing.png">Fresh Water Fishing</option>
+<option data-img-src="images/type/Driven Birds.png">Driven Birds</option>
+<option data-img-src="images/type/Walk-up.png">Walk-up</option>
+<option data-img-src="images/type/Stalking.png">Stalking</option>
+<option data-img-src="images/type/Wildfowling.png">Wildfowling</option>
+<option data-img-src="images/type/Hotel-Lodge.png">Hotel/Lodge</option>
+<option data-img-src="images/type/Clay Pigeon.png">Clay Pigeon</option>
+<option data-img-src="images/type/Game-Simulated.png">Game/Simulated</option>
+<option data-img-src="images/type/Bow Hunting.png">Bow Hunting</option>
+  </select>
+          </div></a>
+          <a href="#" data-hint="Type or select an option" class="hint-new2">       <div class="form-group width-150">
+               <select multiple="" class="my-select-border" data-placeholder="Species">
+                  <option data-img-src="images/species/Pheasant.png">Pheasant</option>
+                  <option data-img-src="images/species/African Pompano.png">African Pompano</option>
+                  <option data-img-src="images/species/Salmon.png">Salmon</option>
+                  <option data-img-src="images/species/Sika Deer.png">Sika Deer</option>
+                  <option data-img-src="images/species/Trout.png">Trout</option>
+                  <option data-img-src="images/species/Alaskan Brown Bear.png">Alaskan Brown Bear</option>
+                  <option data-img-src="images/species/Grouse.png">Grouse</option>
+                  <option data-img-src="images/species/Partridge.png">Partridge</option>
+                  <option data-img-src="images/species/Pigeon.png">Pigeon</option>
+                  <option data-img-src="images/species/Alaska-Yukon Moose.png">Alaska-Yukon Moose</option>
+                  <option data-img-src="images/species/Albacore.png">Albacore</option>
+                  <option data-img-src="images/species/Alligator Gar.png">Alligator Gar</option>
+                  <option data-img-src="images/species/Almaco Jack.png">Almaco Jack</option>
+                  <option data-img-src="images/species/Alpine Ibex.png">Alpine Ibex</option>
+                  <option data-img-src="images/species/American Eel.png">American Eel</option>
+                  <option data-img-src="images/species/Antelope.png">Antelope</option>
+                  <option data-img-src="images/species/Aoudad sheep.png">Aoudad sheep</option>
+                  <option data-img-src="images/species/Prairie Chicken.png">Prairie Chicken</option>
+                  <option data-img-src="images/species/Ptarmigan.png">Ptarmigan</option>
+                  <option data-img-src="images/species/Red Deer.png">Red Deer</option>
+                  <option data-img-src="images/species/Red-Legged Partridge.png">Red-Legged Partridge</option>
+                  <option data-img-src="images/species/Alligator.png">Alligator</option>
+                  <option data-img-src="images/species/Alpine Marmot.png">Alpine Marmot</option>
+                  <option data-img-src="images/species/American Shad.png">American Shad</option>
+                  <option data-img-src="images/species/Apache Trout.png">Apache Trout</option>
+                  <option data-img-src="images/species/Argali.png">Argali</option>
+                  <option data-img-src="images/species/Artic Grayling.png">Artic Grayling</option>
+                  <option data-img-src="images/species/Asian Elk.png">Asian Elk</option>
+                  <option data-img-src="images/species/Atlantic Bigeye Tuna.png">Atlantic Bigeye Tuna</option>
+                  <option data-img-src="images/species/Atlantic Blue Marlin.png">Atlantic Blue Marlin</option>
+                  <option data-img-src="images/species/Atlantic Bonito.png">Atlantic Bonito</option>
+                  <option data-img-src="images/species/Atlantic Cod.png">Atlantic Cod</option>
+                  <option data-img-src="images/species/Atlantic Halibut.png">Atlantic Halibut</option>
+                  <option data-img-src="images/species/Atlantic Sailfish.png">Atlantic Sailfish</option>
+                  <option data-img-src="images/species/Atlantic Salmon.png">Atlantic Salmon</option>
+                  <option data-img-src="images/species/Axis Deer.png">Axis Deer</option>
+                  <option data-img-src="images/species/Baboon.png">Baboon</option>
+                  <option data-img-src="images/species/Badger.png">Badger</option>
+                  <option data-img-src="images/species/Barb.png">Barb</option>
+                  <option data-img-src="images/species/Barbary sheep.png">Barbary sheep</option>
+                  <option data-img-src="images/species/Barracuda.png">Barracuda</option>
+                  <option data-img-src="images/species/Barramundi.png">Barramundi</option>
+                  <option data-img-src="images/species/Barred Sand Bass.png">Barred Sand Bass</option>
+                  <option data-img-src="images/species/Barren Ground Caribou.png">Barren Ground Caribou</option>
+                  <option data-img-src="images/species/Bass.png">Bass</option>
+                  <option data-img-src="images/species/Bear.png">Bear</option>
+                  <option data-img-src="images/species/Beceite Spanish Ibex.png">Beceite Spanish Ibex</option>
+                  <option data-img-src="images/species/Bezoar Ibex.png">Bezoar Ibex</option>
+                  <option data-img-src="images/species/Biesbok.png">Biesbok</option>
+                  <option data-img-src="images/species/Bigeye Thresher Shark.png">Bigeye Thresher Shark</option>
+                  <option data-img-src="images/species/Bighorn Sheep.png">Bighorn Sheep</option>
+                  <option data-img-src="images/species/Bigmouth Buffalo.png">Bigmouth Buffalo</option>
+                  <option data-img-src="images/species/Bison.png">Bison</option>
+                  <option data-img-src="images/species/Black Bear.png">Black Bear</option>
+                  <option data-img-src="images/species/Black Buffalo.png">Black Buffalo</option>
+                  <option data-img-src="images/species/Black Bullhead.png">Black Bullhead</option>
+                  <option data-img-src="images/species/Black Crappie.png">Black Crappie</option>
+                  <option data-img-src="images/species/Black Grouse.png">Black Grouse</option>
+                  <option data-img-src="images/species/Black Marlin.png">Black Marlin</option>
+                  <option data-img-src="images/species/Black Sea Bass.png">Black Sea Bass</option>
+                  <option data-img-src="images/species/Black Tail Deer.png">Black Tail Deer</option>
+                  <option data-img-src="images/species/Black Wildebeest.png">Black Wildebeest</option>
+                  <option data-img-src="images/species/Blackbuck Antelope.png">Blackbuck Antelope</option>
+                  <option data-img-src="images/species/Blackfin Tuna.png">Blackfin Tuna</option>
+                  <option data-img-src="images/species/Blue Catfish.png">Blue Catfish</option>
+                  <option data-img-src="images/species/Blue Marlin.png">Blue Marlin</option>
+                  <option data-img-src="images/species/Blue Runner.png">Blue Runner</option>
+                  <option data-img-src="images/species/Blue Shark.png">Blue Shark</option>
+                  <option data-img-src="images/species/Blue Sheep.png">Blue Sheep</option>
+                  <option data-img-src="images/species/Blue Wildebeest.png">Blue Wildebeest</option>
+                  <option data-img-src="images/species/Bluefish.png">Bluefish</option>
+                  <option data-img-src="images/species/Bluegill.png">Bluegill</option>
+                  <option data-img-src="images/species/Bobcat.png">Bobcat</option>
+                  <option data-img-src="images/species/Bonefish.png">Bonefish</option>
+                  <option data-img-src="images/species/Bongo.png">Bongo</option>
+                  <option data-img-src="images/species/Bonito.png">Bonito</option>
+                  <option data-img-src="images/species/Bontebok.png">Bontebok</option>
+                  <option data-img-src="images/species/Bowfin.png">Bowfin</option>
+                  <option data-img-src="images/species/Bream.png">Bream</option>
+                  <option data-img-src="images/species/Brocket Deer.png">Brocket Deer</option>
+                  <option data-img-src="images/species/Brook Trout.png">Brook Trout</option>
+                  <option data-img-src="images/species/Brown Bear.png">Brown Bear</option>
+                  <option data-img-src="images/species/Brown Bullhead.png">Brown Bullhead</option>
+                  <option data-img-src="images/species/Brown Hare.png">Brown Hare</option>
+                  <option data-img-src="images/species/Brown Trout.png">Brown Trout</option>
+                  <option data-img-src="images/species/Buffalo.png">Buffalo</option>
+                  <option data-img-src="images/species/Bull Trout.png">Bull Trout</option>
+                  <option data-img-src="images/species/Burbot.png">Burbot</option>
+                  <option data-img-src="images/species/Burchell's Zebra.png">Burchell's Zebra</option>
+                  <option data-img-src="images/species/Bush Buck.png">Bush Buck</option>
+                  <option data-img-src="images/species/Bush Duiker.png">Bush Duiker</option>
+                  <option data-img-src="images/species/Bushpig.png">Bushpig</option>
+                  <option data-img-src="images/species/Butterfly Peacock Bass.png">Butterfly Peacock Bass</option>
+                  <option data-img-src="images/species/Cabezon.png">Cabezon</option>
+                  <option data-img-src="images/species/California Bighorn Sheep.png">California Bighorn Sheep</option>
+                  <option data-img-src="images/species/California Halibut.png">California Halibut</option>
+                  <option data-img-src="images/species/Canada Goose.png">Canada Goose</option>
+                  <option data-img-src="images/species/Canada Moose.png">Canada Moose</option>
+                  <option data-img-src="images/species/Cantabrian Chamois.png">Cantabrian Chamois</option>
+                  <option data-img-src="images/species/Cape Buffalo.png">Cape Buffalo</option>
+                  <option data-img-src="images/species/Cape Eland.png">Cape Eland</option>
+                  <option data-img-src="images/species/Capercaillie.png">Capercaillie</option>
+                  <option data-img-src="images/species/Caracal.png">Caracal</option>
+                  <option data-img-src="images/species/Caribou.png">Caribou</option>
+                  <option data-img-src="images/species/Carp.png">Carp</option>
+                  <option data-img-src="images/species/Cat.png">Cat</option>
+                  <option data-img-src="images/species/Catfish.png">Catfish</option>
+                  <option data-img-src="images/species/Central Canada Caribou.png">Central Canada Caribou</option>
+                  <option data-img-src="images/species/Cero Mackerel.png">Cero Mackerel</option>
+                  <option data-img-src="images/species/Chain Pickerel.png">Chain Pickerel</option>
+                  <option data-img-src="images/species/Chamois.png">Chamois</option>
+                  <option data-img-src="images/species/Channel Catfish.png">Channel Catfish</option>
+                  <option data-img-src="images/species/Cheetah.png">Cheetah</option>
+                  <option data-img-src="images/species/Chevrotain.png">Chevrotain</option>
+                  <option data-img-src="images/species/Chinese Water Deer.png">Chinese Water Deer</option>
+                  <option data-img-src="images/species/Chinook Salmon.png">Chinook Salmon</option>
+                  <option data-img-src="images/species/Chobe Bushbuck.png">Chobe Bushbuck</option>
+                  <option data-img-src="images/species/Chub.png">Chub</option>
+                  <option data-img-src="images/species/Chukar.png">Chukar</option>
+                  <option data-img-src="images/species/Chum Salmon.png">Chum Salmon</option>
+                  <option data-img-src="images/species/Cichlid.png">Cichlid</option>
+                  <option data-img-src="images/species/Civet.png">Civet</option>
+                  <option data-img-src="images/species/Cobia.png">Cobia</option>
+                  <option data-img-src="images/species/Coho Salmon.png">Coho Salmon</option>
+                  <option data-img-src="images/species/Columbia Blacktail Deer.png">Columbia Blacktail Deer</option>
+                  <option data-img-src="images/species/Common Duiker.png">Common Duiker</option>
+                  <option data-img-src="images/species/Conger.png">Conger</option>
+                  <option data-img-src="images/species/Coot.png">Coot</option>
+                  <option data-img-src="images/species/Corsican Sheep.png">Corsican Sheep</option>
+                  <option data-img-src="images/species/Coues Whitetail Deer.png">Coues Whitetail Deer</option>
+                  <option data-img-src="images/species/Coyote.png">Coyote</option>
+                  <option data-img-src="images/species/Crevalle Jack.png">Crevalle Jack</option>
+                  <option data-img-src="images/species/Crocodile.png">Crocodile</option>
+                  <option data-img-src="images/species/Cubera Snapper.png">Cubera Snapper</option>
+                  <option data-img-src="images/species/Cutthroat Trout.png">Cutthroat Trout</option>
+                  <option data-img-src="images/species/Dall Sheep.png">Dall Sheep</option>
+                  <option data-img-src="images/species/Desert Bighorn Sheep.png">Desert Bighorn Sheep</option>
+                  <option data-img-src="images/species/Desert Mule Deer.png">Desert Mule Deer</option>
+                  <option data-img-src="images/species/Desert Sheep.png">Desert Sheep</option>
+                  <option data-img-src="images/species/Dik Dik.png">Dik Dik</option>
+                  <option data-img-src="images/species/Dolly Varden.png">Dolly Varden</option>
+                  <option data-img-src="images/species/Donkey.png">Donkey</option>
+                  <option data-img-src="images/species/Dorado.png">Dorado</option>
+                  <option data-img-src="images/species/Dove.png">Dove</option>
+                  <option data-img-src="images/species/Duck.png">Duck</option>
+                  <option data-img-src="images/species/Duiker.png">Duiker</option>
+                  <option data-img-src="images/species/Egyptian Geese.png">Egyptian Geese</option>
+                  <option data-img-src="images/species/Eland.png">Eland</option>
+                  <option data-img-src="images/species/Elephant.png">Elephant</option>
+                  <option data-img-src="images/species/Elk.png">Elk</option>
+                  <option data-img-src="images/species/English Partridge.png">English Partridge</option>
+                  <option data-img-src="images/species/European Bass.png">European Bass</option>
+                  <option data-img-src="images/species/European Beaver.png">European Beaver</option>
+                  <option data-img-src="images/species/Fallow Deer.png">Fallow Deer</option>
+                  <option data-img-src="images/species/Feral Goat.png">Feral Goat</option>
+                  <option data-img-src="images/species/Feral Sheep.png">Feral Sheep</option>
+                  <option data-img-src="images/species/Flathead Catfish.png">Flathead Catfish</option>
+                  <option data-img-src="images/species/Florida Gar.png">Florida Gar</option>
+                  <option data-img-src="images/species/Flounder.png">Flounder</option>
+                  <option data-img-src="images/species/Four Horned Sheep.png">Four Horned Sheep</option>
+                  <option data-img-src="images/species/Fox.png">Fox</option>
+                  <option data-img-src="images/species/Francolin.png">Francolin</option>
+                  <option data-img-src="images/species/French Partridge.png">French Partridge</option>
+                  <option data-img-src="images/species/Freshwater Drum.png">Freshwater Drum</option>
+                  <option data-img-src="images/species/Gar.png">Gar</option>
+                  <option data-img-src="images/species/Gazelle.png">Gazelle</option>
+                  <option data-img-src="images/species/Geese.png">Geese</option>
+                  <option data-img-src="images/species/Gemsbok.png">Gemsbok</option>
+                  <option data-img-src="images/species/Genet.png">Genet</option>
+                  <option data-img-src="images/species/Gerenuk.png">Gerenuk</option>
+                  <option data-img-src="images/species/Giant Eland.png">Giant Eland</option>
+                  <option data-img-src="images/species/Bass.png">Giant Sea Bass</option>
+                  <option data-img-src="images/species/Giant Tiger Fish.png">Giant Tiger Fish</option>
+                  <option data-img-src="images/species/Gilded Catfish.png">Gilded Catfish</option>
+                  <option data-img-src="images/species/Giraffe.png">Giraffe</option>
+                  <option data-img-src="images/species/Gizzard Shad.png">Gizzard Shad</option>
+                  <option data-img-src="images/species/Goat.png">Goat</option>
+                  <option data-img-src="images/species/Goittered Gazelle.png">Goittered Gazelle</option>
+                  <option data-img-src="images/species/Golden Jackal.png">Golden Jackal</option>
+                  <option data-img-src="images/species/Golden Trout.png">Golden Trout</option>
+                  <option data-img-src="images/species/Goldfish.png">Goldfish</option>
+                  <option data-img-src="images/species/Goose.png">Goose</option>
+                  <option data-img-src="images/species/Grant Gazelle.png">Grant Gazelle</option>
+                  <option data-img-src="images/species/Grass Pickerel.png">Grass Pickerel</option>
+                  <option data-img-src="images/species/Grayling.png">Grayling</option>
+                  <option data-img-src="images/species/Great Amberjack.png">Great Amberjack</option>
+                  <option data-img-src="images/species/Great Barracuda.png">Great Barracuda</option>
+                  <option data-img-src="images/species/Great White shark.png">Great White shark</option>
+                  <option data-img-src="images/species/Greater Amberjack.png">Greater Amberjack</option>
+                  <option data-img-src="images/species/Greater Kudu.png">Greater Kudu</option>
+                  <option data-img-src="images/species/Greater Redhorse.png">Greater Redhorse</option>
+                  <option data-img-src="images/species/Gredos Ibex.png">Gredos Ibex</option>
+                  <option data-img-src="images/species/Greenland Shark.png">Greenland Shark</option>
+                  <option data-img-src="images/species/Grey Partridge.png">Grey Partridge</option>
+                  <option data-img-src="images/species/Greylag Goose.png">Greylag Goose</option>
+                  <option data-img-src="images/species/Grizzly.png">Grizzly</option>
+                  <option data-img-src="images/species/Grysbok.png">Grysbok</option>
+                  <option data-img-src="images/species/Guadalupe Bass.png">Guadalupe Bass</option>
+                  <option data-img-src="images/species/Guinea Fowl.png">Guinea Fowl</option>
+                  <option data-img-src="images/species/Haddock.png">Haddock</option>
+                  <option data-img-src="images/species/Hammerhead Shark.png">Hammerhead Shark</option>
+                  <option data-img-src="images/species/Harnessed Bushbuck.png">Harnessed Bushbuck</option>
+                  <option data-img-src="images/species/Hartebeest.png">Hartebeest</option>
+                  <option data-img-src="images/species/Hazel Grouse.png">Hazel Grouse</option>
+                  <option data-img-src="images/species/Himalayan Tahr.png">Himalayan Tahr</option>
+                  <option data-img-src="images/species/Hippopotamus.png">Hippopotamus</option>
+                  <option data-img-src="images/species/Hog Deer.png">Hog Deer</option>
+                  <option data-img-src="images/species/Hog.png">Hog</option>
+                  <option data-img-src="images/species/Honey Badger.png">Honey Badger</option>
+                  <option data-img-src="images/species/Horse-Eye Jack.png">Horse-Eye Jack</option>
+                  <option data-img-src="images/species/Hyena.png">Hyena</option>
+                  <option data-img-src="images/species/Iberian Lynx.png">Iberian Lynx</option>
+                  <option data-img-src="images/species/Ibex.png">Ibex</option>
+                  <option data-img-src="images/species/Impala.png">Impala</option>
+                  <option data-img-src="images/species/Inconnu.png">Inconnu</option>
+                  <option data-img-src="images/species/Jaguar.png">Jaguar</option>
+                  <option data-img-src="images/species/Javelina.png">Javelina</option>
+                  <option data-img-src="images/species/Jewfish.png">Jewfish</option>
+                  <option data-img-src="images/species/Kawakawa.png">Kawakawa</option>
+                  <option data-img-src="images/species/Kerman Sheep.png">Kerman Sheep</option>
+                  <option data-img-src="images/species/King Mackerel.png">King Mackerel</option>
+                  <option data-img-src="images/species/Klipspringer Antelope.png">Klipspringer Antelope</option>
+                  <option data-img-src="images/species/Kob.png">Kob</option>
+                  <option data-img-src="images/species/Kokanee.png">Kokanee</option>
+                  <option data-img-src="images/species/Korrigum.png">Korrigum</option>
+                  <option data-img-src="images/species/Kudu.png">Kudu</option>
+                  <option data-img-src="images/species/Ladyfish.png">Ladyfish</option>
+                  <option data-img-src="images/species/Lake Salmon.png">Lake Salmon</option>
+                  <option data-img-src="images/species/Lake Sturgeon.png">Lake Sturgeon</option>
+                  <option data-img-src="images/species/Lake Trout.png">Lake Trout</option>
+                  <option data-img-src="images/species/Lake Whitefish.png">Lake Whitefish</option>
+                  <option data-img-src="images/species/Largemouth Bass.png">Largemouth Bass</option>
+                  <option data-img-src="images/species/Lechwi.png">Lechwi</option>
+                  <option data-img-src="images/species/Leopard.png">Leopard</option>
+                  <option data-img-src="images/species/Lesser Kudu.png">Lesser Kudu</option>
+                  <option data-img-src="images/species/Limpopo Bushbuck.png">Limpopo Bushbuck</option>
+                  <option data-img-src="images/species/Lingcod.png">Lingcod</option>
+                  <option data-img-src="images/species/Lion.png">Lion</option>
+                  <option data-img-src="images/species/Little Tunny.png">Little Tunny</option>
+                  <option data-img-src="images/species/Longnose Gar.png">Longnose Gar</option>
+                  <option data-img-src="images/species/Longtail Tuna.png">Longtail Tuna</option>
+                  <option data-img-src="images/species/Mahseer.png">Mahseer</option>
+                  <option data-img-src="images/species/Mallard.png">Mallard</option>
+                  <option data-img-src="images/species/Marbled Eel.png">Marbled Eel</option>
+                  <option data-img-src="images/species/Markhor.png">Markhor</option>
+                  <option data-img-src="images/species/Masai Bushbuck.png">Masai Bushbuck</option>
+                  <option data-img-src="images/species/Mediterranean Spearfish.png">Mediterranean Spearfish</option>
+                  <option data-img-src="images/species/Menelik Bushbuck.png">Menelik Bushbuck</option>
+                  <option data-img-src="images/species/Mexican Barracuda.png">Mexican Barracuda</option>
+                  <option data-img-src="images/species/Moose.png">Moose</option>
+                  <option data-img-src="images/species/Mouflon Sheep.png">Mouflon Sheep</option>
+                  <option data-img-src="images/species/Mountain Caribou.png">Mountain Caribou</option>
+                  <option data-img-src="images/species/Mountain Goat.png">Mountain Goat</option>
+                  <option data-img-src="images/species/Mountain Hare.png">Mountain Hare</option>
+                  <option data-img-src="images/species/Mountain Lion.png">Mountain Lion</option>
+                  <option data-img-src="images/species/Mountain Moose.png">Mountain Moose</option>
+                  <option data-img-src="images/species/Mountain Nyala.png">Mountain Nyala</option>
+                  <option data-img-src="images/species/Mountain Reedbuck.png">Mountain Reedbuck</option>
+                  <option data-img-src="images/species/Mountain Whitefish.png">Mountain Whitefish</option>
+                  <option data-img-src="images/species/Mule Deer.png">Mule Deer</option>
+                  <option data-img-src="images/species/Mullet.png">Mullet</option>
+                  <option data-img-src="images/species/Muntjac.png">Muntjac</option>
+                  <option data-img-src="images/species/Musk Ox.png">Musk Ox</option>
+                  <option data-img-src="images/species/Muskellunge.png">Muskellunge</option>
+                  <option data-img-src="images/species/Nile Buffalo.png">Nile Buffalo</option>
+                  <option data-img-src="images/species/Nile Perch.png">Nile Perch</option>
+                  <option data-img-src="images/species/Nilgai.png">Nilgai</option>
+                  <option data-img-src="images/species/Northern Pike.png">Northern Pike</option>
+                  <option data-img-src="images/species/Nyala.png">Nyala</option>
+                  <option data-img-src="images/species/Oribi.png">Oribi</option>
+                  <option data-img-src="images/species/Oryx.png">Oryx</option>
+                  <option data-img-src="images/species/Ostrich.png">Ostrich</option>
+                  <option data-img-src="images/species/Ox.png">Ox</option>
+                  <option data-img-src="images/species/Pacific Amberjack.png">Pacific Amberjack</option>
+                  <option data-img-src="images/species/Pacific Bigeye Tuna.png">Pacific Bigeye Tuna</option>
+                  <option data-img-src="images/species/Pacific Blue Marlin.png">Pacific Blue Marlin</option>
+                  <option data-img-src="images/species/Pacific Bonito.png">Pacific Bonito</option>
+                  <option data-img-src="images/species/Pacific Cod.png">Pacific Cod</option>
+                  <option data-img-src="images/species/Pacific Heilbot.png">Pacific Heilbot</option>
+                  <option data-img-src="images/species/Pacific Sailfish.png">Pacific Sailfish</option>
+                  <option data-img-src="images/species/Peacock Bass.png">Peacock Bass</option>
+                  <option data-img-src="images/species/Peccary.png">Peccary</option>
+                  <option data-img-src="images/species/Pere David Deer.png">Pere David Deer</option>
+                  <option data-img-src="images/species/Permit.png">Permit</option>
+                  <option data-img-src="images/species/Pochard.png">Pochard</option>
+                  <option data-img-src="images/species/Polar Bear.png">Polar Bear</option>
+                  <option data-img-src="images/species/Pollock.png">Pollock</option>
+                  <option data-img-src="images/species/Porbeagle Shark.png">Porbeagle Shark</option>
+                  <option data-img-src="images/species/Porcupine.png">Porcupine</option>
+                  <option data-img-src="images/species/Prairie Dog.png">Prairie Dog</option>
+                  <option data-img-src="images/species/Pronghorn Antelope.png">Pronghorn Antelope</option>
+                  <option data-img-src="images/species/Puku.png">Puku</option>
+                  <option data-img-src="images/species/Quail.png">Quail</option>
+                  <option data-img-src="images/species/Quebec Labrador Caribou.png">Quebec Labrador Caribou</option>
+                  <option data-img-src="images/species/Rabbit.png">Rabbit</option>
+                  <option data-img-src="images/species/Raccoon Dog.png">Raccoon Dog</option>
+                  <option data-img-src="images/species/Raccoon.png">Raccoon</option>
+                  <option data-img-src="images/species/Rainbow Runner.png">Rainbow Runner</option>
+                  <option data-img-src="images/species/Rainbow Trout.png">Rainbow Trout</option>
+                  <option data-img-src="images/species/Red Drum.png">Red Drum</option>
+                  <option data-img-src="images/species/Red Geese.png">Red Geese</option>
+                  <option data-img-src="images/species/Red Snapper.png">Red Snapper</option>
+                  <option data-img-src="images/species/Redeye Bass.png">Redeye Bass</option>
+                  <option data-img-src="images/species/Redfin Pickerel.png">Redfin Pickerel</option>
+                  <option data-img-src="images/species/Redtail Catfish.png">Redtail Catfish</option>
+                  <option data-img-src="images/species/Reed Buck.png">Reed Buck</option>
+                  <option data-img-src="images/species/Reindeer.png">Reindeer</option>
+                  <option data-img-src="images/species/Rhebok.png">Rhebok</option>
+                  <option data-img-src="images/species/Rhinoceros.png">Rhinoceros</option>
+                  <option data-img-src="images/species/Roan Antelope.png">Roan Antelope</option>
+                  <option data-img-src="images/species/Roanoke Bass.png">Roanoke Bass</option>
+                  <option data-img-src="images/species/Rock Bass.png">Rock Bass</option>
+                  <option data-img-src="images/species/Rocky Mountain Bighorn Sheep.png">Rocky Mountain Bighorn Sheep</option>
+                  <option data-img-src="images/species/Rocky Mountain Elk.png">Rocky Mountain Elk</option>
+                  <option data-img-src="images/species/Rocky Mountain Goat.png">Rocky Mountain Goat</option>
+                  <option data-img-src="images/species/Roosevelt Elk.png">Roosevelt Elk</option>
+                  <option data-img-src="images/species/Roosterfish.png">Roosterfish</option>
+                  <option data-img-src="images/species/Round Whitefish.png">Round Whitefish</option>
+                  <option data-img-src="images/species/Rusa Deer.png">Rusa Deer</option>
+                  <option data-img-src="images/species/Sable.png">Sable</option>
+                  <option data-img-src="images/species/Sailfish.png">Sailfish</option>
+                  <option data-img-src="images/species/Sambar Deer.png">Sambar Deer</option>
+                  <option data-img-src="images/species/Sandhill Crane.png">Sandhill Crane</option>
+                  <option data-img-src="images/species/Sauger.png">Sauger</option>
+                  <option data-img-src="images/species/Sea Trout.png">Sea Trout</option>
+                  <option data-img-src="images/species/Shark.png">Shark</option>
+                  <option data-img-src="images/species/Sharptoothed Catfish.png">Sharptoothed Catfish</option>
+                  <option data-img-src="images/species/Sheep.png">Sheep</option>
+                  <option data-img-src="images/species/Shiras Moose.png">Shiras Moose</option>
+                  <option data-img-src="images/species/Shortfin Mako Shark.png">Shortfin Mako Shark</option>
+                  <option data-img-src="images/species/Silver Redhorse.png">Silver Redhorse</option>
+                  <option data-img-src="images/species/Sitatunga.png">Sitatunga</option>
+                  <option data-img-src="images/species/Sitka Blacktail Deer.png">Sitka Blacktail Deer</option>
+                  <option data-img-src="images/species/Skipjack Tuna.png">Skipjack Tuna</option>
+                  <option data-img-src="images/species/Smallmouth Bass.png">Smallmouth Bass</option>
+                  <option data-img-src="images/species/Snipe.png">Snipe</option>
+                  <option data-img-src="images/species/Snook.png">Snook</option>
+                  <option data-img-src="images/species/Snowcock.png">Snowcock</option>
+                  <option data-img-src="images/species/Soay Sheep.png">Soay Sheep</option>
+                  <option data-img-src="images/species/Sockeye Salmon.png">Sockeye Salmon</option>
+                  <option data-img-src="images/species/Soemmering Gazelle.png">Soemmering Gazelle</option>
+                  <option data-img-src="images/species/South African Shelduck.png">South African Shelduck</option>
+                  <option data-img-src="images/species/Southern Bluefin Tuna.png">Southern Bluefin Tuna</option>
+                  <option data-img-src="images/species/Southern Flounder.png">Southern Flounder</option>
+                  <option data-img-src="images/species/Southern Pochard.png">Southern Pochard</option>
+                  <option data-img-src="images/species/Spanish Ibex.png">Spanish Ibex</option>
+                  <option data-img-src="images/species/Spanish Mackerel.png">Spanish Mackerel</option>
+                  <option data-img-src="images/species/Speckled Peacock.png">Speckled Peacock</option>
+                  <option data-img-src="images/species/Spotted Bass.png">Spotted Bass</option>
+                  <option data-img-src="images/species/Spotted Gar.png">Spotted Gar</option>
+                  <option data-img-src="images/species/Spotted Seatrout.png">Spotted Seatrout</option>
+                  <option data-img-src="images/species/Springbok.png">Springbok</option>
+                  <option data-img-src="images/species/Spurwing Geese.png">Spurwing Geese</option>
+                  <option data-img-src="images/species/Steelhead.png">Steelhead</option>
+                  <option data-img-src="images/species/Steenbok.png">Steenbok</option>
+                  <option data-img-src="images/species/Stone Sheep.png">Stone Sheep</option>
+                  <option data-img-src="images/species/Striped Bass.png">Striped Bass</option>
+                  <option data-img-src="images/species/Striped Marlin.png">Striped Marlin</option>
+                  <option data-img-src="images/species/Sturgeon.png">Sturgeon</option>
+                  <option data-img-src="images/species/Summer Flounder.png">Summer Flounder</option>
+                  <option data-img-src="images/species/Suni.png">Suni</option>
+                  <option data-img-src="images/species/Suwannee Bass.png">Suwannee Bass</option>
+                  <option data-img-src="images/species/Swordfish.png">Swordfish</option>
+                  <option data-img-src="images/species/Tahr.png">Tahr</option>
+                  <option data-img-src="images/species/Takin.png">Takin</option>
+                  <option data-img-src="images/species/Tarpon.png">Tarpon</option>
+                  <option data-img-src="images/species/Tautog.png">Tautog</option>
+                  <option data-img-src="images/species/Teal.png">Teal</option>
+                  <option data-img-src="images/species/Thomson Gazelle.png">Thomson Gazelle</option>
+                  <option data-img-src="images/species/Tiang.png">Tiang</option>
+                  <option data-img-src="images/species/Tibetan Gazelle.png">Tibetan Gazelle</option>
+                  <option data-img-src="images/species/Tiger Muskellonge.png">Tiger Muskellonge</option>
+                  <option data-img-src="images/species/Tiger Shark.png">Tiger Shark</option>
+                  <option data-img-src="images/species/Tiger Trout.png">Tiger Trout</option>
+                  <option data-img-src="images/species/Tilapia.png">Tilapia</option>
+                  <option data-img-src="images/species/Topi.png">Topi</option>
+                  <option data-img-src="images/species/Tsessebe.png">Tsessebe</option>
+                  <option data-img-src="images/species/Tule Elk.png">Tule Elk</option>
+                  <option data-img-src="images/species/Turkey Eastern.png">Turkey Eastern</option>
+                  <option data-img-src="images/species/Turkey Merriam.png">Turkey Merriam</option>
+                  <option data-img-src="images/species/Turkey Oceola.png">Turkey Oceola</option>
+                  <option data-img-src="images/species/Turkey Rio Grande.png">Turkey Rio Grande</option>
+                  <option data-img-src="images/species/Urial.png">Urial</option>
+                  <option data-img-src="images/species/Wahoo.png">Wahoo</option>
+                  <option data-img-src="images/species/Walleye.png">Walleye</option>
+                  <option data-img-src="images/species/Warmouth.png">Warmouth</option>
+                  <option data-img-src="images/species/Warsaw Grouper.png">Warsaw Grouper</option>
+                  <option data-img-src="images/species/Warthog.png">Warthog</option>
+                  <option data-img-src="images/species/Water Buffalo.png">Water Buffalo</option>
+                  <option data-img-src="images/species/Water Deer.png">Water Deer</option>
+                  <option data-img-src="images/species/Waterbuck.png">Waterbuck</option>
+                  <option data-img-src="images/species/Weakfish.png">Weakfish</option>
+                  <option data-img-src="images/species/White Bass.png">White Bass</option>
+                  <option data-img-src="images/species/White Catfish.png">White Catfish</option>
+                  <option data-img-src="images/species/White Crappie.png">White Crappie</option>
+                  <option data-img-src="images/species/White faced duck.png">White faced duck</option>
+                  <option data-img-src="images/species/White Marlin.png">White Marlin</option>
+                  <option data-img-src="images/species/White Perch.png">White Perch</option>
+                  <option data-img-src="images/species/White Seabass.png">White Seabass</option>
+                  <option data-img-src="images/species/White Tail Deer.png">White Tail Deer</option>
+                  <option data-img-src="images/species/Wigeon.png">Wigeon</option>
+                  <option data-img-src="images/species/wild boar.png">wild boar</option>
+                  <option data-img-src="images/species/Wild Cat.png">Wild Cat</option>
+                  <option data-img-src="images/species/Wild Goat.png">Wild Goat</option>
+                  <option data-img-src="images/species/Wildebeest.png">Wildebeest</option>
+                  <option data-img-src="images/species/Willow Geese.png">Willow Geese</option>
+                  <option data-img-src="images/species/Wolf.png">Wolf</option>
+                  <option data-img-src="images/species/Wolverine.png">Wolverine</option>
+                  <option data-img-src="images/species/Woodcock.png">Woodcock</option>
+                  <option data-img-src="images/species/Woodland Caribou.png">Woodland Caribou</option>
+                  <option data-img-src="images/species/Woodpigeon.png">Woodpigeon</option>
+                  <option data-img-src="images/species/Yak.png">Yak</option>
+                  <option data-img-src="images/species/Yellow Bullhead.png">Yellow Bullhead</option>
+                  <option data-img-src="images/species/Yellow Hybrid Bass.png">Yellow Hybrid Bass</option>
+                  <option data-img-src="images/species/Yellow Perch.png">Yellow Perch</option>
+                  <option data-img-src="images/species/Yellowbilled Duck.png">Yellowbilled Duck</option>
+                  <option data-img-src="images/species/Yellowfin Tuna.png">Yellowfin Tuna</option>
+                  <option data-img-src="images/species/Zander.png">Zander</option>
+                  <option data-img-src="images/species/Zebra.png">Zebra</option>
+                </select>
+           
+          </div></a>
+     <a href="#" data-hint="Type or select an option" class="hint-new3">           <div class="form-group width-150">
+           <select multiple="" class="my-select-border" data-placeholder="When">
+          
+         <option>January</option> 
+    <option>February</option> 
+    <option>March</option> 
+    <option>April</option> 
+    <option>May</option>
+    <option>June</option>  
+     <option>July</option> 
+    <option>August</option> 
+    <option>Septemeber</option> 
+    <option>October</option> 
+    <option>November</option>
+    <option>December</option>  
+          
+        </select>
+          </div></a>
+              <button type="submit" class="btn btn-danger padd-7-60"><i class="fa fa-search"></i> Find</button>
+            </form>
+      </div>
+        </center>
+  </div>
+  
+      <div class="row"> </div>
+      
+    </section>
+<section class="box-container">
+<div class="overlay overlay-door">
+			<button type="button" class="overlay-close">Close</button>
+			<div>
+    <center>
+          <div class="padd-40-0">
+        <form class="navbar-form " role="search" action="host-listing.html">
+              <div class="form-group">
+            <input id="autocomplete" class="form-control min-width-380" placeholder="Where do you want to go?">
+          </div>
+              <div class="form-group">
+                   <select multiple="" class="my-select-border" data-placeholder="Type"> 
+
+   <option data-img-src="images/type/Coarse Fishing.png">Coarse Fishing</option>
+<option data-img-src="images/type/Driven Big Game.png">Driven Big Game</option>
+<option data-img-src="images/type/Highseat.png">Highseat</option>
+<option data-img-src="images/type/Game Fishing.png">Game Fishing</option>
+<option data-img-src="images/type/Fly Fishing.png">Fly Fishing</option>
+<option data-img-src="images/type/Carp Fishing.png">Carp Fishing</option>
+<option data-img-src="images/type/Ice Fishing.png">Ice Fishing</option>
+<option data-img-src="images/type/Salt Water Fishing.png">Salt Water Fishing</option>
+<option data-img-src="images/type/Fresh Water Fishing.png">Fresh Water Fishing</option>
+<option data-img-src="images/type/Driven Birds.png">Driven Birds</option>
+<option data-img-src="images/type/Walk-up.png">Walk-up</option>
+<option data-img-src="images/type/Stalking.png">Stalking</option>
+<option data-img-src="images/type/Wildfowling.png">Wildfowling</option>
+<option data-img-src="images/type/Hotel-Lodge.png">Hotel/Lodge</option>
+<option data-img-src="images/type/Clay Pigeon.png">Clay Pigeon</option>
+<option data-img-src="images/type/Game-Simulated.png">Game/Simulated</option>
+<option data-img-src="images/type/Bow Hunting.png">Bow Hunting</option>
+  </select>
+          </div>
+               <div class="form-group ">
+          <select multiple="" class="my-select-border" data-placeholder="Species">
+                  <option data-img-src="images/species/Pheasant.png">Pheasant</option>
+                  <option data-img-src="images/species/African Pompano.png">African Pompano</option>
+                  <option data-img-src="images/species/Salmon.png">Salmon</option>
+                  <option data-img-src="images/species/Sika Deer.png">Sika Deer</option>
+                  <option data-img-src="images/species/Trout.png">Trout</option>
+                  <option data-img-src="images/species/Alaskan Brown Bear.png">Alaskan Brown Bear</option>
+                  <option data-img-src="images/species/Grouse.png">Grouse</option>
+                  <option data-img-src="images/species/Partridge.png">Partridge</option>
+                  <option data-img-src="images/species/Pigeon.png">Pigeon</option>
+                  <option data-img-src="images/species/Alaska-Yukon Moose.png">Alaska-Yukon Moose</option>
+                  <option data-img-src="images/species/Albacore.png">Albacore</option>
+                  <option data-img-src="images/species/Alligator Gar.png">Alligator Gar</option>
+                  <option data-img-src="images/species/Almaco Jack.png">Almaco Jack</option>
+                  <option data-img-src="images/species/Alpine Ibex.png">Alpine Ibex</option>
+                  <option data-img-src="images/species/American Eel.png">American Eel</option>
+                  <option data-img-src="images/species/Antelope.png">Antelope</option>
+                  <option data-img-src="images/species/Aoudad sheep.png">Aoudad sheep</option>
+                  <option data-img-src="images/species/Prairie Chicken.png">Prairie Chicken</option>
+                  <option data-img-src="images/species/Ptarmigan.png">Ptarmigan</option>
+                  <option data-img-src="images/species/Red Deer.png">Red Deer</option>
+                  <option data-img-src="images/species/Red-Legged Partridge.png">Red-Legged Partridge</option>
+                  <option data-img-src="images/species/Alligator.png">Alligator</option>
+                  <option data-img-src="images/species/Alpine Marmot.png">Alpine Marmot</option>
+                  <option data-img-src="images/species/American Shad.png">American Shad</option>
+                  <option data-img-src="images/species/Apache Trout.png">Apache Trout</option>
+                  <option data-img-src="images/species/Argali.png">Argali</option>
+                  <option data-img-src="images/species/Artic Grayling.png">Artic Grayling</option>
+                  <option data-img-src="images/species/Asian Elk.png">Asian Elk</option>
+                  <option data-img-src="images/species/Atlantic Bigeye Tuna.png">Atlantic Bigeye Tuna</option>
+                  <option data-img-src="images/species/Atlantic Blue Marlin.png">Atlantic Blue Marlin</option>
+                  <option data-img-src="images/species/Atlantic Bonito.png">Atlantic Bonito</option>
+                  <option data-img-src="images/species/Atlantic Cod.png">Atlantic Cod</option>
+                  <option data-img-src="images/species/Atlantic Halibut.png">Atlantic Halibut</option>
+                  <option data-img-src="images/species/Atlantic Sailfish.png">Atlantic Sailfish</option>
+                  <option data-img-src="images/species/Atlantic Salmon.png">Atlantic Salmon</option>
+                  <option data-img-src="images/species/Axis Deer.png">Axis Deer</option>
+                  <option data-img-src="images/species/Baboon.png">Baboon</option>
+                  <option data-img-src="images/species/Badger.png">Badger</option>
+                  <option data-img-src="images/species/Barb.png">Barb</option>
+                  <option data-img-src="images/species/Barbary sheep.png">Barbary sheep</option>
+                  <option data-img-src="images/species/Barracuda.png">Barracuda</option>
+                  <option data-img-src="images/species/Barramundi.png">Barramundi</option>
+                  <option data-img-src="images/species/Barred Sand Bass.png">Barred Sand Bass</option>
+                  <option data-img-src="images/species/Barren Ground Caribou.png">Barren Ground Caribou</option>
+                  <option data-img-src="images/species/Bass.png">Bass</option>
+                  <option data-img-src="images/species/Bear.png">Bear</option>
+                  <option data-img-src="images/species/Beceite Spanish Ibex.png">Beceite Spanish Ibex</option>
+                  <option data-img-src="images/species/Bezoar Ibex.png">Bezoar Ibex</option>
+                  <option data-img-src="images/species/Biesbok.png">Biesbok</option>
+                  <option data-img-src="images/species/Bigeye Thresher Shark.png">Bigeye Thresher Shark</option>
+                  <option data-img-src="images/species/Bighorn Sheep.png">Bighorn Sheep</option>
+                  <option data-img-src="images/species/Bigmouth Buffalo.png">Bigmouth Buffalo</option>
+                  <option data-img-src="images/species/Bison.png">Bison</option>
+                  <option data-img-src="images/species/Black Bear.png">Black Bear</option>
+                  <option data-img-src="images/species/Black Buffalo.png">Black Buffalo</option>
+                  <option data-img-src="images/species/Black Bullhead.png">Black Bullhead</option>
+                  <option data-img-src="images/species/Black Crappie.png">Black Crappie</option>
+                  <option data-img-src="images/species/Black Grouse.png">Black Grouse</option>
+                  <option data-img-src="images/species/Black Marlin.png">Black Marlin</option>
+                  <option data-img-src="images/species/Black Sea Bass.png">Black Sea Bass</option>
+                  <option data-img-src="images/species/Black Tail Deer.png">Black Tail Deer</option>
+                  <option data-img-src="images/species/Black Wildebeest.png">Black Wildebeest</option>
+                  <option data-img-src="images/species/Blackbuck Antelope.png">Blackbuck Antelope</option>
+                  <option data-img-src="images/species/Blackfin Tuna.png">Blackfin Tuna</option>
+                  <option data-img-src="images/species/Blue Catfish.png">Blue Catfish</option>
+                  <option data-img-src="images/species/Blue Marlin.png">Blue Marlin</option>
+                  <option data-img-src="images/species/Blue Runner.png">Blue Runner</option>
+                  <option data-img-src="images/species/Blue Shark.png">Blue Shark</option>
+                  <option data-img-src="images/species/Blue Sheep.png">Blue Sheep</option>
+                  <option data-img-src="images/species/Blue Wildebeest.png">Blue Wildebeest</option>
+                  <option data-img-src="images/species/Bluefish.png">Bluefish</option>
+                  <option data-img-src="images/species/Bluegill.png">Bluegill</option>
+                  <option data-img-src="images/species/Bobcat.png">Bobcat</option>
+                  <option data-img-src="images/species/Bonefish.png">Bonefish</option>
+                  <option data-img-src="images/species/Bongo.png">Bongo</option>
+                  <option data-img-src="images/species/Bonito.png">Bonito</option>
+                  <option data-img-src="images/species/Bontebok.png">Bontebok</option>
+                  <option data-img-src="images/species/Bowfin.png">Bowfin</option>
+                  <option data-img-src="images/species/Bream.png">Bream</option>
+                  <option data-img-src="images/species/Brocket Deer.png">Brocket Deer</option>
+                  <option data-img-src="images/species/Brook Trout.png">Brook Trout</option>
+                  <option data-img-src="images/species/Brown Bear.png">Brown Bear</option>
+                  <option data-img-src="images/species/Brown Bullhead.png">Brown Bullhead</option>
+                  <option data-img-src="images/species/Brown Hare.png">Brown Hare</option>
+                  <option data-img-src="images/species/Brown Trout.png">Brown Trout</option>
+                  <option data-img-src="images/species/Buffalo.png">Buffalo</option>
+                  <option data-img-src="images/species/Bull Trout.png">Bull Trout</option>
+                  <option data-img-src="images/species/Burbot.png">Burbot</option>
+                  <option data-img-src="images/species/Burchell's Zebra.png">Burchell's Zebra</option>
+                  <option data-img-src="images/species/Bush Buck.png">Bush Buck</option>
+                  <option data-img-src="images/species/Bush Duiker.png">Bush Duiker</option>
+                  <option data-img-src="images/species/Bushpig.png">Bushpig</option>
+                  <option data-img-src="images/species/Butterfly Peacock Bass.png">Butterfly Peacock Bass</option>
+                  <option data-img-src="images/species/Cabezon.png">Cabezon</option>
+                  <option data-img-src="images/species/California Bighorn Sheep.png">California Bighorn Sheep</option>
+                  <option data-img-src="images/species/California Halibut.png">California Halibut</option>
+                  <option data-img-src="images/species/Canada Goose.png">Canada Goose</option>
+                  <option data-img-src="images/species/Canada Moose.png">Canada Moose</option>
+                  <option data-img-src="images/species/Cantabrian Chamois.png">Cantabrian Chamois</option>
+                  <option data-img-src="images/species/Cape Buffalo.png">Cape Buffalo</option>
+                  <option data-img-src="images/species/Cape Eland.png">Cape Eland</option>
+                  <option data-img-src="images/species/Capercaillie.png">Capercaillie</option>
+                  <option data-img-src="images/species/Caracal.png">Caracal</option>
+                  <option data-img-src="images/species/Caribou.png">Caribou</option>
+                  <option data-img-src="images/species/Carp.png">Carp</option>
+                  <option data-img-src="images/species/Cat.png">Cat</option>
+                  <option data-img-src="images/species/Catfish.png">Catfish</option>
+                  <option data-img-src="images/species/Central Canada Caribou.png">Central Canada Caribou</option>
+                  <option data-img-src="images/species/Cero Mackerel.png">Cero Mackerel</option>
+                  <option data-img-src="images/species/Chain Pickerel.png">Chain Pickerel</option>
+                  <option data-img-src="images/species/Chamois.png">Chamois</option>
+                  <option data-img-src="images/species/Channel Catfish.png">Channel Catfish</option>
+                  <option data-img-src="images/species/Cheetah.png">Cheetah</option>
+                  <option data-img-src="images/species/Chevrotain.png">Chevrotain</option>
+                  <option data-img-src="images/species/Chinese Water Deer.png">Chinese Water Deer</option>
+                  <option data-img-src="images/species/Chinook Salmon.png">Chinook Salmon</option>
+                  <option data-img-src="images/species/Chobe Bushbuck.png">Chobe Bushbuck</option>
+                  <option data-img-src="images/species/Chub.png">Chub</option>
+                  <option data-img-src="images/species/Chukar.png">Chukar</option>
+                  <option data-img-src="images/species/Chum Salmon.png">Chum Salmon</option>
+                  <option data-img-src="images/species/Cichlid.png">Cichlid</option>
+                  <option data-img-src="images/species/Civet.png">Civet</option>
+                  <option data-img-src="images/species/Cobia.png">Cobia</option>
+                  <option data-img-src="images/species/Coho Salmon.png">Coho Salmon</option>
+                  <option data-img-src="images/species/Columbia Blacktail Deer.png">Columbia Blacktail Deer</option>
+                  <option data-img-src="images/species/Common Duiker.png">Common Duiker</option>
+                  <option data-img-src="images/species/Conger.png">Conger</option>
+                  <option data-img-src="images/species/Coot.png">Coot</option>
+                  <option data-img-src="images/species/Corsican Sheep.png">Corsican Sheep</option>
+                  <option data-img-src="images/species/Coues Whitetail Deer.png">Coues Whitetail Deer</option>
+                  <option data-img-src="images/species/Coyote.png">Coyote</option>
+                  <option data-img-src="images/species/Crevalle Jack.png">Crevalle Jack</option>
+                  <option data-img-src="images/species/Crocodile.png">Crocodile</option>
+                  <option data-img-src="images/species/Cubera Snapper.png">Cubera Snapper</option>
+                  <option data-img-src="images/species/Cutthroat Trout.png">Cutthroat Trout</option>
+                  <option data-img-src="images/species/Dall Sheep.png">Dall Sheep</option>
+                  <option data-img-src="images/species/Desert Bighorn Sheep.png">Desert Bighorn Sheep</option>
+                  <option data-img-src="images/species/Desert Mule Deer.png">Desert Mule Deer</option>
+                  <option data-img-src="images/species/Desert Sheep.png">Desert Sheep</option>
+                  <option data-img-src="images/species/Dik Dik.png">Dik Dik</option>
+                  <option data-img-src="images/species/Dolly Varden.png">Dolly Varden</option>
+                  <option data-img-src="images/species/Donkey.png">Donkey</option>
+                  <option data-img-src="images/species/Dorado.png">Dorado</option>
+                  <option data-img-src="images/species/Dove.png">Dove</option>
+                  <option data-img-src="images/species/Duck.png">Duck</option>
+                  <option data-img-src="images/species/Duiker.png">Duiker</option>
+                  <option data-img-src="images/species/Egyptian Geese.png">Egyptian Geese</option>
+                  <option data-img-src="images/species/Eland.png">Eland</option>
+                  <option data-img-src="images/species/Elephant.png">Elephant</option>
+                  <option data-img-src="images/species/Elk.png">Elk</option>
+                  <option data-img-src="images/species/English Partridge.png">English Partridge</option>
+                  <option data-img-src="images/species/European Bass.png">European Bass</option>
+                  <option data-img-src="images/species/European Beaver.png">European Beaver</option>
+                  <option data-img-src="images/species/Fallow Deer.png">Fallow Deer</option>
+                  <option data-img-src="images/species/Feral Goat.png">Feral Goat</option>
+                  <option data-img-src="images/species/Feral Sheep.png">Feral Sheep</option>
+                  <option data-img-src="images/species/Flathead Catfish.png">Flathead Catfish</option>
+                  <option data-img-src="images/species/Florida Gar.png">Florida Gar</option>
+                  <option data-img-src="images/species/Flounder.png">Flounder</option>
+                  <option data-img-src="images/species/Four Horned Sheep.png">Four Horned Sheep</option>
+                  <option data-img-src="images/species/Fox.png">Fox</option>
+                  <option data-img-src="images/species/Francolin.png">Francolin</option>
+                  <option data-img-src="images/species/French Partridge.png">French Partridge</option>
+                  <option data-img-src="images/species/Freshwater Drum.png">Freshwater Drum</option>
+                  <option data-img-src="images/species/Gar.png">Gar</option>
+                  <option data-img-src="images/species/Gazelle.png">Gazelle</option>
+                  <option data-img-src="images/species/Geese.png">Geese</option>
+                  <option data-img-src="images/species/Gemsbok.png">Gemsbok</option>
+                  <option data-img-src="images/species/Genet.png">Genet</option>
+                  <option data-img-src="images/species/Gerenuk.png">Gerenuk</option>
+                  <option data-img-src="images/species/Giant Eland.png">Giant Eland</option>
+                  <option data-img-src="images/species/Bass.png">Giant Sea Bass</option>
+                  <option data-img-src="images/species/Giant Tiger Fish.png">Giant Tiger Fish</option>
+                  <option data-img-src="images/species/Gilded Catfish.png">Gilded Catfish</option>
+                  <option data-img-src="images/species/Giraffe.png">Giraffe</option>
+                  <option data-img-src="images/species/Gizzard Shad.png">Gizzard Shad</option>
+                  <option data-img-src="images/species/Goat.png">Goat</option>
+                  <option data-img-src="images/species/Goittered Gazelle.png">Goittered Gazelle</option>
+                  <option data-img-src="images/species/Golden Jackal.png">Golden Jackal</option>
+                  <option data-img-src="images/species/Golden Trout.png">Golden Trout</option>
+                  <option data-img-src="images/species/Goldfish.png">Goldfish</option>
+                  <option data-img-src="images/species/Goose.png">Goose</option>
+                  <option data-img-src="images/species/Grant Gazelle.png">Grant Gazelle</option>
+                  <option data-img-src="images/species/Grass Pickerel.png">Grass Pickerel</option>
+                  <option data-img-src="images/species/Grayling.png">Grayling</option>
+                  <option data-img-src="images/species/Great Amberjack.png">Great Amberjack</option>
+                  <option data-img-src="images/species/Great Barracuda.png">Great Barracuda</option>
+                  <option data-img-src="images/species/Great White shark.png">Great White shark</option>
+                  <option data-img-src="images/species/Greater Amberjack.png">Greater Amberjack</option>
+                  <option data-img-src="images/species/Greater Kudu.png">Greater Kudu</option>
+                  <option data-img-src="images/species/Greater Redhorse.png">Greater Redhorse</option>
+                  <option data-img-src="images/species/Gredos Ibex.png">Gredos Ibex</option>
+                  <option data-img-src="images/species/Greenland Shark.png">Greenland Shark</option>
+                  <option data-img-src="images/species/Grey Partridge.png">Grey Partridge</option>
+                  <option data-img-src="images/species/Greylag Goose.png">Greylag Goose</option>
+                  <option data-img-src="images/species/Grizzly.png">Grizzly</option>
+                  <option data-img-src="images/species/Grysbok.png">Grysbok</option>
+                  <option data-img-src="images/species/Guadalupe Bass.png">Guadalupe Bass</option>
+                  <option data-img-src="images/species/Guinea Fowl.png">Guinea Fowl</option>
+                  <option data-img-src="images/species/Haddock.png">Haddock</option>
+                  <option data-img-src="images/species/Hammerhead Shark.png">Hammerhead Shark</option>
+                  <option data-img-src="images/species/Harnessed Bushbuck.png">Harnessed Bushbuck</option>
+                  <option data-img-src="images/species/Hartebeest.png">Hartebeest</option>
+                  <option data-img-src="images/species/Hazel Grouse.png">Hazel Grouse</option>
+                  <option data-img-src="images/species/Himalayan Tahr.png">Himalayan Tahr</option>
+                  <option data-img-src="images/species/Hippopotamus.png">Hippopotamus</option>
+                  <option data-img-src="images/species/Hog Deer.png">Hog Deer</option>
+                  <option data-img-src="images/species/Hog.png">Hog</option>
+                  <option data-img-src="images/species/Honey Badger.png">Honey Badger</option>
+                  <option data-img-src="images/species/Horse-Eye Jack.png">Horse-Eye Jack</option>
+                  <option data-img-src="images/species/Hyena.png">Hyena</option>
+                  <option data-img-src="images/species/Iberian Lynx.png">Iberian Lynx</option>
+                  <option data-img-src="images/species/Ibex.png">Ibex</option>
+                  <option data-img-src="images/species/Impala.png">Impala</option>
+                  <option data-img-src="images/species/Inconnu.png">Inconnu</option>
+                  <option data-img-src="images/species/Jaguar.png">Jaguar</option>
+                  <option data-img-src="images/species/Javelina.png">Javelina</option>
+                  <option data-img-src="images/species/Jewfish.png">Jewfish</option>
+                  <option data-img-src="images/species/Kawakawa.png">Kawakawa</option>
+                  <option data-img-src="images/species/Kerman Sheep.png">Kerman Sheep</option>
+                  <option data-img-src="images/species/King Mackerel.png">King Mackerel</option>
+                  <option data-img-src="images/species/Klipspringer Antelope.png">Klipspringer Antelope</option>
+                  <option data-img-src="images/species/Kob.png">Kob</option>
+                  <option data-img-src="images/species/Kokanee.png">Kokanee</option>
+                  <option data-img-src="images/species/Korrigum.png">Korrigum</option>
+                  <option data-img-src="images/species/Kudu.png">Kudu</option>
+                  <option data-img-src="images/species/Ladyfish.png">Ladyfish</option>
+                  <option data-img-src="images/species/Lake Salmon.png">Lake Salmon</option>
+                  <option data-img-src="images/species/Lake Sturgeon.png">Lake Sturgeon</option>
+                  <option data-img-src="images/species/Lake Trout.png">Lake Trout</option>
+                  <option data-img-src="images/species/Lake Whitefish.png">Lake Whitefish</option>
+                  <option data-img-src="images/species/Largemouth Bass.png">Largemouth Bass</option>
+                  <option data-img-src="images/species/Lechwi.png">Lechwi</option>
+                  <option data-img-src="images/species/Leopard.png">Leopard</option>
+                  <option data-img-src="images/species/Lesser Kudu.png">Lesser Kudu</option>
+                  <option data-img-src="images/species/Limpopo Bushbuck.png">Limpopo Bushbuck</option>
+                  <option data-img-src="images/species/Lingcod.png">Lingcod</option>
+                  <option data-img-src="images/species/Lion.png">Lion</option>
+                  <option data-img-src="images/species/Little Tunny.png">Little Tunny</option>
+                  <option data-img-src="images/species/Longnose Gar.png">Longnose Gar</option>
+                  <option data-img-src="images/species/Longtail Tuna.png">Longtail Tuna</option>
+                  <option data-img-src="images/species/Mahseer.png">Mahseer</option>
+                  <option data-img-src="images/species/Mallard.png">Mallard</option>
+                  <option data-img-src="images/species/Marbled Eel.png">Marbled Eel</option>
+                  <option data-img-src="images/species/Markhor.png">Markhor</option>
+                  <option data-img-src="images/species/Masai Bushbuck.png">Masai Bushbuck</option>
+                  <option data-img-src="images/species/Mediterranean Spearfish.png">Mediterranean Spearfish</option>
+                  <option data-img-src="images/species/Menelik Bushbuck.png">Menelik Bushbuck</option>
+                  <option data-img-src="images/species/Mexican Barracuda.png">Mexican Barracuda</option>
+                  <option data-img-src="images/species/Moose.png">Moose</option>
+                  <option data-img-src="images/species/Mouflon Sheep.png">Mouflon Sheep</option>
+                  <option data-img-src="images/species/Mountain Caribou.png">Mountain Caribou</option>
+                  <option data-img-src="images/species/Mountain Goat.png">Mountain Goat</option>
+                  <option data-img-src="images/species/Mountain Hare.png">Mountain Hare</option>
+                  <option data-img-src="images/species/Mountain Lion.png">Mountain Lion</option>
+                  <option data-img-src="images/species/Mountain Moose.png">Mountain Moose</option>
+                  <option data-img-src="images/species/Mountain Nyala.png">Mountain Nyala</option>
+                  <option data-img-src="images/species/Mountain Reedbuck.png">Mountain Reedbuck</option>
+                  <option data-img-src="images/species/Mountain Whitefish.png">Mountain Whitefish</option>
+                  <option data-img-src="images/species/Mule Deer.png">Mule Deer</option>
+                  <option data-img-src="images/species/Mullet.png">Mullet</option>
+                  <option data-img-src="images/species/Muntjac.png">Muntjac</option>
+                  <option data-img-src="images/species/Musk Ox.png">Musk Ox</option>
+                  <option data-img-src="images/species/Muskellunge.png">Muskellunge</option>
+                  <option data-img-src="images/species/Nile Buffalo.png">Nile Buffalo</option>
+                  <option data-img-src="images/species/Nile Perch.png">Nile Perch</option>
+                  <option data-img-src="images/species/Nilgai.png">Nilgai</option>
+                  <option data-img-src="images/species/Northern Pike.png">Northern Pike</option>
+                  <option data-img-src="images/species/Nyala.png">Nyala</option>
+                  <option data-img-src="images/species/Oribi.png">Oribi</option>
+                  <option data-img-src="images/species/Oryx.png">Oryx</option>
+                  <option data-img-src="images/species/Ostrich.png">Ostrich</option>
+                  <option data-img-src="images/species/Ox.png">Ox</option>
+                  <option data-img-src="images/species/Pacific Amberjack.png">Pacific Amberjack</option>
+                  <option data-img-src="images/species/Pacific Bigeye Tuna.png">Pacific Bigeye Tuna</option>
+                  <option data-img-src="images/species/Pacific Blue Marlin.png">Pacific Blue Marlin</option>
+                  <option data-img-src="images/species/Pacific Bonito.png">Pacific Bonito</option>
+                  <option data-img-src="images/species/Pacific Cod.png">Pacific Cod</option>
+                  <option data-img-src="images/species/Pacific Heilbot.png">Pacific Heilbot</option>
+                  <option data-img-src="images/species/Pacific Sailfish.png">Pacific Sailfish</option>
+                  <option data-img-src="images/species/Peacock Bass.png">Peacock Bass</option>
+                  <option data-img-src="images/species/Peccary.png">Peccary</option>
+                  <option data-img-src="images/species/Pere David Deer.png">Pere David Deer</option>
+                  <option data-img-src="images/species/Permit.png">Permit</option>
+                  <option data-img-src="images/species/Pochard.png">Pochard</option>
+                  <option data-img-src="images/species/Polar Bear.png">Polar Bear</option>
+                  <option data-img-src="images/species/Pollock.png">Pollock</option>
+                  <option data-img-src="images/species/Porbeagle Shark.png">Porbeagle Shark</option>
+                  <option data-img-src="images/species/Porcupine.png">Porcupine</option>
+                  <option data-img-src="images/species/Prairie Dog.png">Prairie Dog</option>
+                  <option data-img-src="images/species/Pronghorn Antelope.png">Pronghorn Antelope</option>
+                  <option data-img-src="images/species/Puku.png">Puku</option>
+                  <option data-img-src="images/species/Quail.png">Quail</option>
+                  <option data-img-src="images/species/Quebec Labrador Caribou.png">Quebec Labrador Caribou</option>
+                  <option data-img-src="images/species/Rabbit.png">Rabbit</option>
+                  <option data-img-src="images/species/Raccoon Dog.png">Raccoon Dog</option>
+                  <option data-img-src="images/species/Raccoon.png">Raccoon</option>
+                  <option data-img-src="images/species/Rainbow Runner.png">Rainbow Runner</option>
+                  <option data-img-src="images/species/Rainbow Trout.png">Rainbow Trout</option>
+                  <option data-img-src="images/species/Red Drum.png">Red Drum</option>
+                  <option data-img-src="images/species/Red Geese.png">Red Geese</option>
+                  <option data-img-src="images/species/Red Snapper.png">Red Snapper</option>
+                  <option data-img-src="images/species/Redeye Bass.png">Redeye Bass</option>
+                  <option data-img-src="images/species/Redfin Pickerel.png">Redfin Pickerel</option>
+                  <option data-img-src="images/species/Redtail Catfish.png">Redtail Catfish</option>
+                  <option data-img-src="images/species/Reed Buck.png">Reed Buck</option>
+                  <option data-img-src="images/species/Reindeer.png">Reindeer</option>
+                  <option data-img-src="images/species/Rhebok.png">Rhebok</option>
+                  <option data-img-src="images/species/Rhinoceros.png">Rhinoceros</option>
+                  <option data-img-src="images/species/Roan Antelope.png">Roan Antelope</option>
+                  <option data-img-src="images/species/Roanoke Bass.png">Roanoke Bass</option>
+                  <option data-img-src="images/species/Rock Bass.png">Rock Bass</option>
+                  <option data-img-src="images/species/Rocky Mountain Bighorn Sheep.png">Rocky Mountain Bighorn Sheep</option>
+                  <option data-img-src="images/species/Rocky Mountain Elk.png">Rocky Mountain Elk</option>
+                  <option data-img-src="images/species/Rocky Mountain Goat.png">Rocky Mountain Goat</option>
+                  <option data-img-src="images/species/Roosevelt Elk.png">Roosevelt Elk</option>
+                  <option data-img-src="images/species/Roosterfish.png">Roosterfish</option>
+                  <option data-img-src="images/species/Round Whitefish.png">Round Whitefish</option>
+                  <option data-img-src="images/species/Rusa Deer.png">Rusa Deer</option>
+                  <option data-img-src="images/species/Sable.png">Sable</option>
+                  <option data-img-src="images/species/Sailfish.png">Sailfish</option>
+                  <option data-img-src="images/species/Sambar Deer.png">Sambar Deer</option>
+                  <option data-img-src="images/species/Sandhill Crane.png">Sandhill Crane</option>
+                  <option data-img-src="images/species/Sauger.png">Sauger</option>
+                  <option data-img-src="images/species/Sea Trout.png">Sea Trout</option>
+                  <option data-img-src="images/species/Shark.png">Shark</option>
+                  <option data-img-src="images/species/Sharptoothed Catfish.png">Sharptoothed Catfish</option>
+                  <option data-img-src="images/species/Sheep.png">Sheep</option>
+                  <option data-img-src="images/species/Shiras Moose.png">Shiras Moose</option>
+                  <option data-img-src="images/species/Shortfin Mako Shark.png">Shortfin Mako Shark</option>
+                  <option data-img-src="images/species/Silver Redhorse.png">Silver Redhorse</option>
+                  <option data-img-src="images/species/Sitatunga.png">Sitatunga</option>
+                  <option data-img-src="images/species/Sitka Blacktail Deer.png">Sitka Blacktail Deer</option>
+                  <option data-img-src="images/species/Skipjack Tuna.png">Skipjack Tuna</option>
+                  <option data-img-src="images/species/Smallmouth Bass.png">Smallmouth Bass</option>
+                  <option data-img-src="images/species/Snipe.png">Snipe</option>
+                  <option data-img-src="images/species/Snook.png">Snook</option>
+                  <option data-img-src="images/species/Snowcock.png">Snowcock</option>
+                  <option data-img-src="images/species/Soay Sheep.png">Soay Sheep</option>
+                  <option data-img-src="images/species/Sockeye Salmon.png">Sockeye Salmon</option>
+                  <option data-img-src="images/species/Soemmering Gazelle.png">Soemmering Gazelle</option>
+                  <option data-img-src="images/species/South African Shelduck.png">South African Shelduck</option>
+                  <option data-img-src="images/species/Southern Bluefin Tuna.png">Southern Bluefin Tuna</option>
+                  <option data-img-src="images/species/Southern Flounder.png">Southern Flounder</option>
+                  <option data-img-src="images/species/Southern Pochard.png">Southern Pochard</option>
+                  <option data-img-src="images/species/Spanish Ibex.png">Spanish Ibex</option>
+                  <option data-img-src="images/species/Spanish Mackerel.png">Spanish Mackerel</option>
+                  <option data-img-src="images/species/Speckled Peacock.png">Speckled Peacock</option>
+                  <option data-img-src="images/species/Spotted Bass.png">Spotted Bass</option>
+                  <option data-img-src="images/species/Spotted Gar.png">Spotted Gar</option>
+                  <option data-img-src="images/species/Spotted Seatrout.png">Spotted Seatrout</option>
+                  <option data-img-src="images/species/Springbok.png">Springbok</option>
+                  <option data-img-src="images/species/Spurwing Geese.png">Spurwing Geese</option>
+                  <option data-img-src="images/species/Steelhead.png">Steelhead</option>
+                  <option data-img-src="images/species/Steenbok.png">Steenbok</option>
+                  <option data-img-src="images/species/Stone Sheep.png">Stone Sheep</option>
+                  <option data-img-src="images/species/Striped Bass.png">Striped Bass</option>
+                  <option data-img-src="images/species/Striped Marlin.png">Striped Marlin</option>
+                  <option data-img-src="images/species/Sturgeon.png">Sturgeon</option>
+                  <option data-img-src="images/species/Summer Flounder.png">Summer Flounder</option>
+                  <option data-img-src="images/species/Suni.png">Suni</option>
+                  <option data-img-src="images/species/Suwannee Bass.png">Suwannee Bass</option>
+                  <option data-img-src="images/species/Swordfish.png">Swordfish</option>
+                  <option data-img-src="images/species/Tahr.png">Tahr</option>
+                  <option data-img-src="images/species/Takin.png">Takin</option>
+                  <option data-img-src="images/species/Tarpon.png">Tarpon</option>
+                  <option data-img-src="images/species/Tautog.png">Tautog</option>
+                  <option data-img-src="images/species/Teal.png">Teal</option>
+                  <option data-img-src="images/species/Thomson Gazelle.png">Thomson Gazelle</option>
+                  <option data-img-src="images/species/Tiang.png">Tiang</option>
+                  <option data-img-src="images/species/Tibetan Gazelle.png">Tibetan Gazelle</option>
+                  <option data-img-src="images/species/Tiger Muskellonge.png">Tiger Muskellonge</option>
+                  <option data-img-src="images/species/Tiger Shark.png">Tiger Shark</option>
+                  <option data-img-src="images/species/Tiger Trout.png">Tiger Trout</option>
+                  <option data-img-src="images/species/Tilapia.png">Tilapia</option>
+                  <option data-img-src="images/species/Topi.png">Topi</option>
+                  <option data-img-src="images/species/Tsessebe.png">Tsessebe</option>
+                  <option data-img-src="images/species/Tule Elk.png">Tule Elk</option>
+                  <option data-img-src="images/species/Turkey Eastern.png">Turkey Eastern</option>
+                  <option data-img-src="images/species/Turkey Merriam.png">Turkey Merriam</option>
+                  <option data-img-src="images/species/Turkey Oceola.png">Turkey Oceola</option>
+                  <option data-img-src="images/species/Turkey Rio Grande.png">Turkey Rio Grande</option>
+                  <option data-img-src="images/species/Urial.png">Urial</option>
+                  <option data-img-src="images/species/Wahoo.png">Wahoo</option>
+                  <option data-img-src="images/species/Walleye.png">Walleye</option>
+                  <option data-img-src="images/species/Warmouth.png">Warmouth</option>
+                  <option data-img-src="images/species/Warsaw Grouper.png">Warsaw Grouper</option>
+                  <option data-img-src="images/species/Warthog.png">Warthog</option>
+                  <option data-img-src="images/species/Water Buffalo.png">Water Buffalo</option>
+                  <option data-img-src="images/species/Water Deer.png">Water Deer</option>
+                  <option data-img-src="images/species/Waterbuck.png">Waterbuck</option>
+                  <option data-img-src="images/species/Weakfish.png">Weakfish</option>
+                  <option data-img-src="images/species/White Bass.png">White Bass</option>
+                  <option data-img-src="images/species/White Catfish.png">White Catfish</option>
+                  <option data-img-src="images/species/White Crappie.png">White Crappie</option>
+                  <option data-img-src="images/species/White faced duck.png">White faced duck</option>
+                  <option data-img-src="images/species/White Marlin.png">White Marlin</option>
+                  <option data-img-src="images/species/White Perch.png">White Perch</option>
+                  <option data-img-src="images/species/White Seabass.png">White Seabass</option>
+                  <option data-img-src="images/species/White Tail Deer.png">White Tail Deer</option>
+                  <option data-img-src="images/species/Wigeon.png">Wigeon</option>
+                  <option data-img-src="images/species/wild boar.png">wild boar</option>
+                  <option data-img-src="images/species/Wild Cat.png">Wild Cat</option>
+                  <option data-img-src="images/species/Wild Goat.png">Wild Goat</option>
+                  <option data-img-src="images/species/Wildebeest.png">Wildebeest</option>
+                  <option data-img-src="images/species/Willow Geese.png">Willow Geese</option>
+                  <option data-img-src="images/species/Wolf.png">Wolf</option>
+                  <option data-img-src="images/species/Wolverine.png">Wolverine</option>
+                  <option data-img-src="images/species/Woodcock.png">Woodcock</option>
+                  <option data-img-src="images/species/Woodland Caribou.png">Woodland Caribou</option>
+                  <option data-img-src="images/species/Woodpigeon.png">Woodpigeon</option>
+                  <option data-img-src="images/species/Yak.png">Yak</option>
+                  <option data-img-src="images/species/Yellow Bullhead.png">Yellow Bullhead</option>
+                  <option data-img-src="images/species/Yellow Hybrid Bass.png">Yellow Hybrid Bass</option>
+                  <option data-img-src="images/species/Yellow Perch.png">Yellow Perch</option>
+                  <option data-img-src="images/species/Yellowbilled Duck.png">Yellowbilled Duck</option>
+                  <option data-img-src="images/species/Yellowfin Tuna.png">Yellowfin Tuna</option>
+                  <option data-img-src="images/species/Zander.png">Zander</option>
+                  <option data-img-src="images/species/Zebra.png">Zebra</option>
+                </select>
+           
+          </div>
+              <div class="form-group width-240">
+          <select id="month-selection" class="selectpicker  form-control">
+          
+         <option>January</option> 
+    <option>February</option> 
+    <option>March</option> 
+    <option>April</option> 
+    <option>May</option>
+    <option>June</option>  
+     <option>July</option> 
+    <option>August</option> 
+    <option>Septemeber</option> 
+    <option>October</option> 
+    <option>November</option>
+    <option>December</option>  
+          
+        </select>
+          </div>
+              <button type="submit" class="btn btn-danger padd-7-60"><i class="fa fa-search"></i> Find</button>
+            </form>
+      </div>
+        </center>
+  </div>
+		</div>
+      <center>
+    <div class="min-height-90"></div>
+    <h3>Explore the world<br>
+          <span>discover new inspiring places</span></h3>
+  </center>
+      <div class="min-height-50"></div>
+      <div class="container">
+    <div class="row"> <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+        <div class="img-box">
+          <div class="tile"><img src="images/img1.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+            <div class="caption-img">
+              <h4 class="text-center color-fff">Chateau St Michel, France</h4>
+            </div>
+            <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+              </div>
+              <span class="text color-fff">Very Good </span> </div>
+          </div>
+        </div>
+      </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img3.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Barrier reef, Australia</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Very Good </span> </div>
+              </div>
+        </div>
+          </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img2.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Chateau de Villette, France</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Very Good </span> </div>
+              </div>
+        </div>
+          </div>
+      </a> </div>
+    <!-- first row-->
+    <div class="row"> <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+        <div class="img-box">
+          <div class="tile"><img src="images/img4.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+            <div class="caption-img">
+              <h4 class="text-center color-fff">Saskatchewan, Canada</h4>
+            </div>
+            <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                <div class="progress-bar bg-2ecc71" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"> <span class="sr-only">90%</span> </div>
+              </div>
+              <span class="text color-fff">Excellent</span> </div>
+          </div>
+        </div>
+      </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img6.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Azores, Atlantic Ocean</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Very Good </span> </div>
+              </div>
+        </div>
+          </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img5.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Kispiox river, Canada</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar bg-2ecc71" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 100%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Excellent</span> </div>
+              </div>
+        </div>
+          </div>
+      </a> </div>
+    <!--third row-->
+    <div class="row"> <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+        <div class="img-box">
+          <div class="tile"><img src="images/img8.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+
+            <div class="caption-img">
+              <h4 class="text-center color-fff">Runga, Zimbabwe</h4>
+            </div>
+            <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 50%"> <span class="sr-only">90%</span> </div>
+              </div>
+              <span class="text color-fff">Good </span> </div>
+          </div>
+        </div>
+      </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img7.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Ramsay ducks, South Africa</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Very Good </span> </div>
+              </div>
+        </div>
+          </div>
+      </a> 
+          <!-- second images--> 
+          <a href="listing-detail.html">
+      <div class="col-md-4 padd-10">
+            <div class="img-box">
+          <div class="tile"><img src="images/img9.jpg" class="img-responsive"></div>
+          <div class="rating-box">
+                <div class="caption-img">
+              <h4 class="text-center color-fff">Belingi, Botswana</h4>
+            </div>
+                <div class="rating col-md-5 pull-right">
+              <div class="progress height-10 mg-0 width-75">
+                    <div class="progress-bar rate-color-1" role="progressbar" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100" style="width: 90%"> <span class="sr-only">90%</span> </div>
+                  </div>
+              <span class="text color-fff">Very Good </span> </div>
+              </div>
+        </div>
+          </div>
+      </a> </div>
+    <!-- end image boxes--> 
+  </div>
+    </section>
+
+<section class="container">
+<div class="row">
+<div class="col-md-12 padd-10">
+      <div class="img-box2"> <img src="images/big-image.jpg" class="img-responsive fit-full">
+    <center>
+          <h3 class=" color-fff upper-case">Rate your last Destination and see <br>
+        <span class="color-fff">what others think of your next</span><br>
+        <a href="#" data-toggle="modal" data-target="#rate" class="btn btn-3 padd-10-20 rate btn-mgt-20">Rate <i class="fa fa-angle-right"></i></a>
+      </h3>
+        </center>
+  </div>
+  </div>
+  </div>
+    </section>
+<footer>
+      <div class="container">
+    <div class="foot-nav">
+          <center>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  social padd-0">
+              <h5 class="color-fff  padd-right-5">Download Apps</h5>
+              <ul class="list-inline">
+            <li><a href=""><img src="images/google-paly.png" width="78" height="20.5"></a></li>
+            <li><a href=""><img src="images/app-store.png" width="78" height="20.5" ></a></li>
+          </ul>
+            </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 col-md-offset-1 col-sm-offset-1 footer-nav2">
+              <ul class="list-inline color-fff">
+            <li><a href="">About us</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+              <h5 class="color-fff">© Copyright 2014 AirTrip.com</h5>
+            </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 col-md-offset-1 col-sm-offset-1  social padd-0">
+              <h5 class="color-fff">Follow us on</h5>
+              <ul class="list-inline color-fff">
+            <li><a href="" data-hint="Twitter" class="hint1"><i class="fa fa-twitter-square"></i></a></li>
+            <li><a href="" data-hint="Facebook" class="hint2"><i class="fa  fa-facebook-square"></i></a></li>
+            <li><a href="" data-hint="Pinterest" class="hint11"><i class="fa fa-pinterest-square"></i></a></li>
+            <li><a href="" data-hint="Instagram" class="hint12"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="" data-hint="Google+" class="hint13"><i class="fa  fa-google-plus-square"></i></a></li>
+            <li><a href="" data-hint="Linkedin" class="hint14"><i class="fa fa-linkedin-square"></i></a></li>
+            <li><a href="" data-hint="Youtube" class="hint15"><i class="fa fa-youtube-square"></i></a></li>
+          </ul>
+            </div>
+      </center>
+        </div>
+  </div>
+    </footer>
+<script type="text/javascript">
+/**
+ * video source: http://beachfrontprod.blogspot.com/2011/09/random-footage-clip-2.html
+ */
+$(function() {
+  var BV = new $.BigVideo({useFlashForFirefox:false});
+    
+  BV.init();
+  BV.show('media/airtrip.mov', {altSource:'media/river.ogv', ambient: true});
+});
+
+function changeOption(txt){
+              //var option = $(txt).attr("value", "option value").text("Text");
+              $("#species").empty().append(txt);
+}
+
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+
+    $("#type1").on('change', function(){
+ 
+      switch($("#type1").val()) {
+          case "Driven":
+            changeOption("<option>Pheasant</option><option>Salmon</option><option>White tail deer</option><option>Sheep</option><option>Bobcat</option>")
+              break;
+          case "Rough shooting":
+            changeOption("<option>Duck</option><option>Sea trout</option><option>Black tail deer</option><option>Mountain goat</option><option>Lion</option>")
+              break;
+          case "Walked up":
+            changeOption("<option>Pigeon</option><option>Grayling</option><option>Elk</option><option>Bison</option><option>Fox</option>")
+              break;
+          case "Stalking":
+            changeOption("<option>Partridge</option><option>Brown Trout</option><option>Antelope</option><option>Turkey</option><option>Lynx</option>")
+              break;
+          case "Fly fishing":
+            changeOption("<option>Geese</option><option>Rainbow trout</option><option>Black bear</option><option>Chukar</option><option>Wolf</option>")
+              break;
+          case "Bait fishing":
+            changeOption("<option>Quail</option><option>Artic char</option><option>Grizzly bear</option><option>Prairie chicken</option><option>Coyote</option>")
+              break;
+          case "Spinning":
+            changeOption("<option>Grouse</option><option>Coarse</option><option>Brown bear</option><option>Ptarmigan</option><option>Mixed</option>")
+              break;
+          case "Big game fishing":
+            changeOption("<option>Boar</option><option>Other species</option><option>Polar bear</option><option>Snipe</option><option>Elephant</option>")
+              break;
+          case "Hotel/lodge":
+            changeOption("<option>Clays/Simulated</option><option>Whitetail deer</option><option>Caribou</option><option>Woodcock</option><option>Leopard</option>")
+              break;
+      }
+
+    })
+    
+});
+</script> 
+<script>
+         $("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+  });
+  
+        </script> 
+<!-- Modal -->
+<div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center>
+              <h4 class="modal-title upper-case font-30 padd-t18" id="myModalLabel"><strong>Join</strong> with</h4>
+            </center>
+      </div>
+          <div class="modal-body">
+        <div class="min-height-25"></div>
+        <center>
+              <ul class="list-inline">
+            <li><a href="" class="btn btn-8 padd-15-70 font-14"><i class="fa fa-facebook"></i> <span class="color-fff font-style ">Facebook</span></a></li>
+            <li><a href="" class="btn btn-9 padd-15-70 font-14"><i class="fa fa-google-plus"></i> <span class="font-style color-fff ">Google</span></a></li>
+          </ul>
+              <div class="min-height-25"></div>
+              <img src="images/or.jpg">
+              <div class="min-height-25"></div>
+              <ul class="list-inline">
+            <li><a href="" class="btn btn-9 padd-15-70 font-14"><i class="fa fa-envelope"></i> <span class="color-fff font-style ">Join with Email</span></a></li>
+          </ul>
+              <div class="min-height-25"></div>
+              <p class="para  padd-0-60 align-fit">By signing up, I agree to Airtrip’s <a href="" class=" color-e74c3c">Terms of Service</a>, <a href="" class=" color-e74c3c">Privacy Policy</a>, 
+            and<a href="" class=" color-e74c3c"> Host Guarantee Terms.</a></p>
+              <hr>
+              <p class="para  padd-0-60">Already an AirTrip member? <a href="" class="color-2ecc71">Log in</a></p>
+            </center>
+      </div>
+        </div>
+  </div>
+    </div>
+<!-- log in modal-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center>
+              <h4 class="modal-title upper-case font-30 padd-t18" id="myModalLabel"><strong>Login</strong> with</h4>
+            </center>
+      </div>
+          <div class="modal-body">
+        <div class="min-height-25"></div>
+        <center>
+              <ul class="list-inline">
+            <li><a href="" class="btn btn-8 padd-15-70 font-14"><i class="fa fa-facebook"></i> <span class="color-fff font-style ">Facebook</span></a></li>
+            <li><a href="" class="btn btn-9 padd-15-70 font-14"><i class="fa fa-google-plus"></i> <span class="font-style color-fff ">Google</span></a></li>
+          </ul>
+              <div class="min-height-25"></div>
+              <img src="images/or.jpg">
+              <div class="min-height-25"></div>
+              <form id="log-form"  role="">
+            <fieldset>
+                  <div class=" padd-6-65">
+                <div class="form-group">
+                      <div class="inner-addon right-addon"> <i class="glyphicon glyphicon-user"></i>
+                    <input type="text" placeholder="Username" class="schedule-bg bord-log-input" />
+                  </div>
+                    </div>
+                <div class="form-group">
+                      <div class="inner-addon right-addon"> <i class="glyphicon glyphicon-lock"></i>
+                    <input type="password" placeholder="Password" class="schedule-bg bord-log-input" />
+                  </div>
+                    </div>
+                <div class=" col-md-4 text-left padd-0"> <span  >
+                  <input id="demo_box_1" class="css-checkbox" type="checkbox" />
+                  <label for="demo_box_1" name="demo_lbl_1" class="css-label text-fit">Remember me</label>
+                  <!-- Checkbox powered by CssCheckbox.com --> 
+                  
+                  </span> </div>
+                <div class=" col-md-8 padd-0 text-right "> <a href="#">Forgot Password?</a> </div>
+              </div>
+                  <div class="clearfix"></div>
+                  <center>
+                <div class="min-height-25"></div>
+                <a href="myprofile.html" class=" btn btn-2 padd-11-60 font-16">Login</a>
+              </center>
+                </fieldset>
+          </form>
+              <div class="min-height-25"></div>
+              <hr>
+              <p class="para  padd-0-60">Don't have an account? <a href="#" data-toggle="modal" data-target="#joinModal" class="color-2ecc71">Sign up</a></p>
+            </center>
+      </div>
+        </div>
+  </div>
+    </div>
+    <div class="modal" id="species" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+       <div class="modal-content bg-333">
+          <div class="modal-header">
+        <button type="button" class="close color-fff opacity-full" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+       <center>
+        <h4 class="modal-title upper-case font-20 padd-t18 color-fff" id="myModalLabel"><strong>Select</strong> Species</h4>
+         </center>
+      </div>
+            <div class="modal-body">
+     
+ <center>
+ <a href="#" class="btn btn-danger padd-7-60 mgt-20 font-14">Select <i class="fa fa-angle-right"></i> </a>
+ </center>
+            </div>
+        </div>
+  </div>
+    </div>
+<script type="text/javascript">
+      
+      function DropDown(el) {
+
+        this.dd = el;
+        this.placeholder = this.dd.children('span');
+        this.opts = this.dd.find('ul.dropdown > li');
+        this.val = '';
+        this.index = -1;
+        this.initEvents();
+      }
+      DropDown.prototype = {
+        initEvents : function() {
+          var obj = this;
+
+          obj.dd.on('click', function(event){
+            $(this).toggleClass('active');
+            return false;
+          });
+
+          obj.opts.on('click',function(){
+            var opt = $(this);
+            obj.val = opt.text();
+            obj.index = opt.index();
+            obj.placeholder.text(obj.val);
+          });
+        },
+        getValue : function() {
+          return this.val;
+        },
+        getIndex : function() {
+          return this.index;
+        }
+      }
+
+      $(function() {
+
+        var dd = new DropDown( $('#dd4') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-4').removeClass('active');
+        });
+		 var dd = new DropDown( $('#dd5') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-5').removeClass('active');
+        });
+		 var dd = new DropDown( $('#dd6') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-6').removeClass('active');
+        });
+		 var dd = new DropDown( $('#dd7') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-7').removeClass('active');
+        });
+		 var dd = new DropDown( $('#dd8') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-8').removeClass('active');
+        });
+		 var dd = new DropDown( $('#dd9') );
+
+        $(document).click(function() {
+          // all dropdowns
+          $('.wrapper-dropdown-9').removeClass('active');
+        });
+
+      });
+	  
+
+    </script>
+    	<script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+		<script src="js/demo1.js"></script>
+            <script src="js/chosen.jquery.js" type="text/javascript"></script>
+    <script src="js/ImageSelect.jquery.js" type="text/javascript"></script>
+      <script type="text/javascript"> 
+
+      $('.xml-code').each(function() {
+
+          var $this = $(this),
+              $code = $this.html();
+
+          $this.empty();
+
+          var myCodeMirror = CodeMirror(this, {
+              value: $code,
+              mode: 'xml',
+              lineWrapping: true,
+              lineNumbers: true,
+              readOnly: true
+          });
+
+      });
+
+      $('.js-code').each(function() {
+
+          var $this = $(this),
+              $code = $this.html();
+
+          $this.empty();
+
+          var myCodeMirror = CodeMirror(this, {
+              value: $code,
+              mode: 'javascript',
+              lineWrapping: true,
+              lineNumbers: true,
+              readOnly: true
+          });
+
+      });
+
+
+      $(".my-select").chosen({width:"100%"});
+
+
+      $(".my-select-border").chosen({
+        width:"100%",
+       
+      });
+	  //  $(".my-select-border2").chosen({
+      //  width:"100%",
+   //     html_template: '<img style="margin-right:4px"  class="{class_name}" src="{url}" />'
+   //   });
+
+    </script>
+    <script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+    </script>
+    <!-- USER JOIN WITH-->
+   <div class="modal fade" id="user-join" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+  
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center>
+              <h4 class="modal-title upper-case font-30 padd-t18" id="myModalLabel"><strong>Join</strong> with</h4>
+            </center>
+      </div>
+          <div class="modal-body">
+        <div class="min-height-25"></div>
+        <center>
+                    <ul class="list-inline">
+            <li><a href="" class="btn btn-8 padd-15-70 font-14"><i class="fa fa-facebook"></i> <span class="color-fff font-style ">Facebook</span></a></li>
+            <li><a href="" class="btn btn-9 padd-15-70 font-14"><i class="fa fa-google-plus"></i> <span class="font-style color-fff ">Google</span></a></li>
+          </ul>
+              <div class="min-height-25"></div>
+              <img src="images/or.jpg">
+              <div class="min-height-25"></div>
+              <ul class="list-inline">
+            <li class="width-80"><a href="" class="btn btn-9 padd-15-70 font-14 width-100"><i class="fa fa-envelope"></i> <span class="color-fff font-style ">Join with Email</span></a></li>
+          </ul>
+          <div class="min-height-25"></div>
+          <form>
+          		<fieldset>
+                <div class="row width-85">
+                	<div class="col-md-12">
+                    	<input class="form-control bg-f9f9f9 border-f1f1f1 padd-20" type="" id="" placeholder="E-mail"/>
+                    </div>
+                    </div>
+                    <div class="min-height-25"></div>
+                    <div class="row width-85">
+                    <div class="col-md-6">
+                    	<input class="form-control bg-f9f9f9 border-f1f1f1 padd-20" type="" id="" placeholder="Password"/>
+                    </div>
+                    <div class="col-md-6">
+                    	<input class="form-control bg-f9f9f9 border-f1f1f1 padd-20" type="" id="" placeholder="Confirm Password"/>
+                    </div>
+                    </div>
+                </fieldset>
+          </form>
+              <div class="min-height-25"></div>
+              
+              <p class="para  padd-0-60 align-fit"><input id="1" class="css-checkbox padd-btm-30" type="checkbox" />
+          <label for="1" name="" class="css-label"></label>By signing up, I agree to Airtrip’s <a href="" class=" color-e74c3c">Terms of Service</a>, <a href="" class=" color-e74c3c">Privacy Policy</a>, 
+            and<a href="" class=" color-e74c3c"> Host Guarantee Terms.</a></p>
+            <button type="button" class="btn btn-2 padd-10-40">Join</button>
+              <hr>
+              <p class="para  padd-0-60">Already an AirTrip member? <a href="" class="color-2ecc71">Log in</a></p>
+            </center>
+      </div>
+        </div>
+ 
+  </div>
+  </div>
+    </div>
+<!-- uSER jOIN in modal--> 
+
+  <!-- USER JOIN WITH-->
+   <div class="modal fade" id="rate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+    <div class="modal-content">
+  
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+        <center>
+        <div class="min-height-50"></div>
+              <h4 class="modal-title upper-case font-25 padd-t18" id="myModalLabel">review a host you have visited</h4>
+            </center>
+      </div>
+          <div class="modal-body">
+        <div class="min-height-25"></div>
+        <center>
+     
+          <form>
+           <div class="form-group padd-6-40">
+           <div class="col-md-11 col-sm-11 col-xs-11 pull-left">
+            <input id="autocomplete2" class="form-control bg-f9f9f9 border-f1f1f1 padd-25 " placeholder="Search Hosts">
+            </div>
+             <div class="col-md-1 col-sm-1 col-xs-1 pull-right padd-0">
+            <button class="btn btn-danger  padd-15-20"><i class="fa fa-search"></i></button>
+            </div>
+          </div>		
+         
+              <div class="min-height-50"></div><div class="min-height-25"></div>
+    
+            <button type="button" class="btn btn-2 padd-10-40 font-20">Submit</button>
+                   <div class="min-height-50"></div>
+              </form>
+            </center>
+      </div>
+        </div>
+ 
+  </div>
+  </div>
+    </div>
+<!-- uSER jOIN in modal--> 
+
+
+ <script>
+    $(function () {
+    $('.input-group-addon.beautiful').each(function () {
+        
+        var $widget = $(this),
+            $input = $widget.find('input'),
+            type = $input.attr('type');
+            settings = {
+                checkbox: {
+                    on: { icon: 'fa fa-check-circle-o' },
+                    off: { icon: 'fa fa-circle-o' }
+                },
+                radio: {
+                    on: { icon: 'fa fa-dot-circle-o' },
+                    off: { icon: 'fa fa-circle-o' }
+                }
+            };
+            
+        $widget.prepend('<span class="' + settings[type].off.icon + '"></span>');
+            
+        $widget.on('click', function () {
+            $input.prop('checked', !$input.is(':checked'));
+            updateDisplay();
+        });
+            
+        function updateDisplay() {
+            var isChecked = $input.is(':checked') ? 'on' : 'off';
+                
+            $widget.find('.fa').attr('class', settings[type][isChecked].icon);
+                
+            //Just for desplay
+            isChecked = $input.is(':checked') ? 'checked' : 'not Checked';
+            $widget.closest('.input-group').find('input[type="text"]').val('Input is currently ' + isChecked)
+        }
+        
+        updateDisplay();
+    });
+});
+    </script>
+</body>
+</html>
